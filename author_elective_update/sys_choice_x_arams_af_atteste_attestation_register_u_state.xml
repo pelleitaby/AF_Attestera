@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_state" table="x_arams_af_atteste_attestation_register" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coming</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>0</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 12:17:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>76445895715c24144a40604d772bb511</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
+            <value>coming</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>0</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 10:47:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a6af7fc5719824144a40604d772bb515</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
+            <value>new</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Active</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>1</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 12:17:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>76445895715c24144a40604d772bb512</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
+            <value>active</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Approved</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>1</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 10:47:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>eaaf7fc5719824144a40604d772bb516</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
+            <value>approved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Passed</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>2</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 10:47:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>aeaf7fc5719824144a40604d772bb524</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
+            <value>passed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Rejected</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>2</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 10:47:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>22af7fc5719824144a40604d772bb524</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
+            <value>rejected</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_state</element>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 10:47:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>22af7fc5719824144a40604d772bb516</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_state</sys_name>
+            <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+            <sys_update_name>sys_choice_x_arams_af_atteste_attestation_register_u_state</sys_update_name>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-04 10:47:24</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

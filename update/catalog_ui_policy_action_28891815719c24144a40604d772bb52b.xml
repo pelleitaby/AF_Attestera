@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Attestera">43a4d8d5715c24144a40604d772bb5f0</catalog_item>
+        <catalog_variable>IO:ffc81c91719c24144a40604d772bb515</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 12:40:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>28891815719c24144a40604d772bb52b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>max_amount</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_28891815719c24144a40604d772bb52b</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 12:40:26</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Max amount read only">04691015719c24144a40604d772bb55e</ui_policy>
+        <variable>max_amount</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Attestera">43a4d8d5715c24144a40604d772bb5f0</sc_cat_item>
+        <sc_category display_value="Övrigt">fc2f8607dbc95b84d441f3d61d961968</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 12:57:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>567dd09171dc24144a40604d772bb594</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Övrigt.Attestera</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sc_cat_item_category_567dd09171dc24144a40604d772bb594</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 12:57:38</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</application>
+        <file_path/>
+        <instance_id>0a3a4f9edb0a6f409df22f17d49619af</instance_id>
+        <instance_name>serviceportal-dev</instance_name>
+        <name>sc_cat_item_category_567dd09171dc24144a40604d772bb594</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Attestera">43a4d8d5715c24144a40604d772bb5f0</sc_cat_item><sc_category display_value="Övrigt">fc2f8607dbc95b84d441f3d61d961968</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>velan</sys_created_by><sys_created_on>2020-11-04 12:57:38</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>567dd09171dc24144a40604d772bb594</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Övrigt.Attestera</sys_name><sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope><sys_update_name>sc_cat_item_category_567dd09171dc24144a40604d772bb594</sys_update_name><sys_updated_by>velan</sys_updated_by><sys_updated_on>2020-11-04 12:57:38</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-311020838</payload_hash>
+        <record_name>Övrigt.Attestera</record_name>
+        <reverted_from/>
+        <source>69059efc71dc20144a40604d772bb500</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 12:57:38</sys_created_on>
+        <sys_id>d27d501571dc24144a40604d772bb52f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17593558d510000001</sys_recorded_at>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 12:57:38</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>da7d5015aedc2414104f238688149c2e</update_guid>
+        <update_guid_history>da7d5015aedc2414104f238688149c2e:-311020838</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2020-11-04 13:58:20">a0add85171dc24144a40604d772bb579</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 12:58:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>aea8111dc9ab49d89c379537e5b75084</sys_id>
+        <sys_metadata>567dd09171dc24144a40604d772bb594</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Övrigt.Attestera</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_parent display_value="Attestera">43a4d8d5715c24144a40604d772bb5f0</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_scope_delete display_value="">80565de7d5d4443d8eef1d0e01c79cb9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_567dd09171dc24144a40604d772bb594</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_567dd09171dc24144a40604d772bb594">d27d501571dc24144a40604d772bb52f</sys_update_version>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 12:58:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

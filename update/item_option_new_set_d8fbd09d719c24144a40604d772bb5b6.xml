@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>true</display_title>
+        <internal_name>limited_attestation</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>38</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 12:51:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d8fbd09d719c24144a40604d772bb5b6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Limited attestation</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>item_option_new_set_d8fbd09d719c24144a40604d772bb5b6</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 13:02:04</sys_updated_on>
+        <title>Limited attestation</title>
+        <type>one_to_one</type>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

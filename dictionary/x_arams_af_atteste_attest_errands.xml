@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Attest Errands" max_length="40" name="x_arams_af_atteste_attest_errands" type="collection"/>
+</database>

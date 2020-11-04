@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Attestation register" max_length="40" name="x_arams_af_atteste_attestation_register" type="collection">
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Cost center" max_length="32" name="u_cost_center" reference="cmn_cost_center" type="reference"/>
+        <element attributes="omit_sys_original=true" default="0" label="Max amount" max_length="20" name="u_max_amount" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Coming" sequence="0" value="coming"/>
+                <element inactive="true" inactive_on_update="true" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
+                <element inactive="true" inactive_on_update="true" label="Approved" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="Passed" sequence="2" value="passed"/>
+                <element inactive="true" inactive_on_update="true" label="Rejected" sequence="2" value="rejected"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="User" max_length="32" name="u_user" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Valid from" max_length="40" name="u_valid_from" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Valid to" max_length="40" name="u_valid_to" type="glide_date"/>
+        <index name="index">
+            <element name="u_cost_center"/>
+        </index>
+        <index name="index2">
+            <element name="u_user"/>
+        </index>
+    </element>
+</database>

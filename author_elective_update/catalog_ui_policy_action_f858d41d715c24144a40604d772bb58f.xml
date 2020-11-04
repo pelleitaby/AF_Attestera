@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Attestera">43a4d8d5715c24144a40604d772bb5f0</catalog_item>
+        <catalog_variable>IO:0fa71c59715c24144a40604d772bb577</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 12:35:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f858d41d715c24144a40604d772bb58f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>valid_to</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_f858d41d715c24144a40604d772bb58f</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 12:36:03</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Limited attestation">ea18d011719c24144a40604d772bb591</ui_policy>
+        <variable>valid_to</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</application>
+        <file_path/>
+        <instance_id>0a3a4f9edb0a6f409df22f17d49619af</instance_id>
+        <instance_name>serviceportal-dev</instance_name>
+        <name>catalog_ui_policy_action_f858d41d715c24144a40604d772bb58f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Attestera">43a4d8d5715c24144a40604d772bb5f0</catalog_item><catalog_variable>IO:0fa71c59715c24144a40604d772bb577</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>velan</sys_created_by><sys_created_on>2020-11-04 12:35:09</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>f858d41d715c24144a40604d772bb58f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>valid_to</sys_name><sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope><sys_update_name>catalog_ui_policy_action_f858d41d715c24144a40604d772bb58f</sys_update_name><sys_updated_by>velan</sys_updated_by><sys_updated_on>2020-11-04 12:36:03</sys_updated_on><table/><ui_policy display_value="Limited attestation">ea18d011719c24144a40604d772bb591</ui_policy><variable>valid_to</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1938494910</payload_hash>
+        <record_name>valid_to</record_name>
+        <reverted_from/>
+        <source>69059efc71dc20144a40604d772bb500</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 12:36:03</sys_created_on>
+        <sys_id>8a885c51719c24144a40604d772bb532</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1759341c7d60000001</sys_recorded_at>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 12:36:03</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>42885c51779c2414019b2e84c6ab6632</update_guid>
+        <update_guid_history>42885c51779c2414019b2e84c6ab6632:-1938494910,3058d41dc35c241401d7fb118ee2e092:-822358714</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2020-11-04 13:55:12">eeec905171dc24144a40604d772bb587</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 12:55:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>32ecf82914dc4aad957507e6ca5d4a61</sys_id>
+        <sys_metadata>f858d41d715c24144a40604d772bb58f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>valid_to</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_scope_delete display_value="">80565de7d5d4443d8eef1d0e01c79cb9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_f858d41d715c24144a40604d772bb58f</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_f858d41d715c24144a40604d772bb58f">8a885c51719c24144a40604d772bb532</sys_update_version>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 12:55:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

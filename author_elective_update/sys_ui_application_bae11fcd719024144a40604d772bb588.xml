@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>Attestation register</name>
+        <order/>
+        <roles>x_arams_af_atteste.attestation_register_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 07:27:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>bae11fcd719024144a40604d772bb588</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attestation register</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_ui_application_bae11fcd719024144a40604d772bb588</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 07:27:32</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</application>
+        <file_path/>
+        <instance_id>0a3a4f9edb0a6f409df22f17d49619af</instance_id>
+        <instance_name>serviceportal-dev</instance_name>
+        <name>sys_ui_application_bae11fcd719024144a40604d772bb588</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Attestation register</name><order/><roles>x_arams_af_atteste.attestation_register_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>velan</sys_created_by><sys_created_on>2020-11-04 07:27:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>bae11fcd719024144a40604d772bb588</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Attestation register</sys_name><sys_overrides/><sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope><sys_update_name>sys_ui_application_bae11fcd719024144a40604d772bb588</sys_update_name><sys_updated_by>velan</sys_updated_by><sys_updated_on>2020-11-04 07:27:32</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>-1907118295</payload_hash>
+        <record_name>Attestation register</record_name>
+        <reverted_from/>
+        <source>69059efc71dc20144a40604d772bb500</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 07:27:32</sys_created_on>
+        <sys_id>bae11fcd719024144a40604d772bb58a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1759227556d0000001</sys_recorded_at>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 07:27:32</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>b2e11fcdb6902414be737bc7e651898a</update_guid>
+        <update_guid_history>b2e11fcdb6902414be737bc7e651898a:-1907118295</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 10:41:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>114e0605a708489481444d2a87ac3f10</sys_id>
+        <sys_metadata>bae11fcd719024144a40604d772bb588</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attestation register</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_scope_delete display_value="">80565de7d5d4443d8eef1d0e01c79cb9</sys_scope_delete>
+        <sys_update_name>sys_ui_application_bae11fcd719024144a40604d772bb588</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_bae11fcd719024144a40604d772bb588">bae11fcd719024144a40604d772bb58a</sys_update_version>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 10:41:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

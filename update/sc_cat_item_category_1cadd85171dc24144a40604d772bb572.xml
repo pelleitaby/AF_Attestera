@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Attestera">43a4d8d5715c24144a40604d772bb5f0</sc_cat_item>
+        <sc_category display_value="Få hjälp">0f46ceccdb8a6300be83fd161d9619c0</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-04 12:58:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1cadd85171dc24144a40604d772bb572</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Få hjälp.Attestera</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sc_cat_item_category_1cadd85171dc24144a40604d772bb572</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-11-04 12:58:20</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>
