@@ -6,13 +6,13 @@
         <category/>
         <cost>0</cost>
         <custom_cart/>
-        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
         <description/>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
-        <flow_designer_flow/>
+        <flow_designer_flow display_value="AF_Attestera_NewRequest">1b74ac95711064144a40604d772bb5c8</flow_designer_flow>
         <group/>
         <hide_sp>false</hide_sp>
         <icon/>
@@ -59,7 +59,7 @@
         <sys_created_on>2020-11-04 12:20:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>43a4d8d5715c24144a40604d772bb5f0</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Attestera</sys_name>
         <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
         <sys_policy/>
@@ -67,7 +67,7 @@
         <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
         <sys_update_name>sc_cat_item_43a4d8d5715c24144a40604d772bb5f0</sys_update_name>
         <sys_updated_by>velan</sys_updated_by>
-        <sys_updated_on>2020-11-04 13:00:39</sys_updated_on>
+        <sys_updated_on>2020-11-04 15:42:34</sys_updated_on>
         <template/>
         <type>item</type>
         <u_af_dwp_af_computer_type/>

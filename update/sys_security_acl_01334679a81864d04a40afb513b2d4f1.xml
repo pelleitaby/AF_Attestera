@@ -4,24 +4,24 @@
         <admin_overrides>true</admin_overrides>
         <advanced>false</advanced>
         <condition/>
-        <description>Default access control on x_arams_af_atteste_attestation_register</description>
+        <description/>
         <name>x_arams_af_atteste_attestation_register</name>
         <operation display_value="write">write</operation>
         <script/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>velan</sys_created_by>
-        <sys_created_on>2020-11-04 07:27:33</sys_created_on>
+        <sys_created_on>2020-11-06 09:40:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>47e1dfcd719024144a40604d772bb5db</sys_id>
+        <sys_id>01334679a81864d04a40afb513b2d4f1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_arams_af_atteste_attestation_register</sys_name>
         <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
-        <sys_update_name>sys_security_acl_47e1dfcd719024144a40604d772bb5db</sys_update_name>
+        <sys_update_name>sys_security_acl_01334679a81864d04a40afb513b2d4f1</sys_update_name>
         <sys_updated_by>velan</sys_updated_by>
-        <sys_updated_on>2020-11-04 07:27:33</sys_updated_on>
+        <sys_updated_on>2020-11-06 09:40:48</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
