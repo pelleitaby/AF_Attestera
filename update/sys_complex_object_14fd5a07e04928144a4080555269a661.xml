@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD50fd5a07134928140501fc55c2652161</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>ad0596bc71dc20144a40604d772bb5e9</scope_name>
+        <serialized_content>{"FlowDesigner:FD50fd5a07134928140501fc55c2652161":{},"FlowDesigner:FD50fd5a07134928140501fc55c2652161.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"1f28a98f-c5ea-487b-bf54-231a7b752fef\",\"default_value\":\"\",\"label\":\"cost_centers\",\"mandatory\":\"false\",\"uiUniqueId\":\"85446052-7098-4b05-bd29-f8e627da2479\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD50fd5a07134928140501fc55c2652161\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"5e464aa9-c720-4613-9c78-e2512bdb1683\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-17 15:35:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>14fd5a07e04928144a4080555269a661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD50fd5a07134928140501fc55c2652161</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_complex_object_14fd5a07e04928144a4080555269a661</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-17 15:35:24</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

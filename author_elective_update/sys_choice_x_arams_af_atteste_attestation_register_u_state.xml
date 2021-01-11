@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="u_state" table="x_arams_af_atteste_attestation_register" version="3">
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
+        <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_state</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Coming</label>
-            <language>en</language>
             <name>x_arams_af_atteste_attestation_register</name>
-            <sequence>0</sequence>
+            <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 12:17:32</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_id>76445895715c24144a40604d772bb511</sys_id>
+            <sys_created_on>2020-11-04 10:47:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>bd38709bf194a0104a4010d84c4ab596</sys_id>
             <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_state</sys_name>
+            <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+            <sys_update_name>sys_choice_x_arams_af_atteste_attestation_register_u_state</sys_update_name>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
-            <value>coming</value>
-        </sys_choice>
+            <sys_updated_on>2020-11-04 10:47:24</sys_updated_on>
+        </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>u_state</element>
@@ -41,18 +41,36 @@
             <element>u_state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Active</label>
-            <language>en</language>
+            <label>Begärd</label>
+            <language>sv</language>
             <name>x_arams_af_atteste_attestation_register</name>
-            <sequence>1</sequence>
+            <sequence>0</sequence>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 12:17:32</sys_created_on>
+            <sys_created_on>2020-11-24 12:47:04</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>76445895715c24144a40604d772bb512</sys_id>
+            <sys_id>eeda53e3e0a4e8104a4080555269a615</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
-            <value>active</value>
+            <sys_updated_on>2020-11-24 12:47:04</sys_updated_on>
+            <value>requested</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Requested</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>0</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-16 09:59:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>01d72dc1f1ece8904a4010d84c4ab5ce</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-16 10:09:11</sys_updated_on>
+            <value>requested</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -76,55 +94,181 @@
             <dependent_value/>
             <element>u_state</element>
             <hint/>
-            <inactive>false</inactive>
-            <label>Passed</label>
-            <language>en</language>
+            <inactive>true</inactive>
+            <label>Godkänd</label>
+            <language>sv</language>
             <name>x_arams_af_atteste_attestation_register</name>
-            <sequence>2</sequence>
+            <sequence>1</sequence>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:24</sys_created_on>
+            <sys_created_on>2020-11-24 12:47:48</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>aeaf7fc5719824144a40604d772bb524</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>410b9be3e0a4e8104a4080555269a607</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
-            <value>passed</value>
+            <sys_updated_on>2020-11-24 12:47:48</sys_updated_on>
+            <value>approved</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>u_state</element>
             <hint/>
-            <inactive>true</inactive>
-            <label>Rejected</label>
+            <inactive>false</inactive>
+            <label>Coming</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>1</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 12:17:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>76445895715c24144a40604d772bb511</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-16 11:07:55</sys_updated_on>
+            <value>coming</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kommande</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>1</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-24 12:48:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>b81b5327e0a4e8104a4080555269a6e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-24 12:48:03</sys_updated_on>
+            <value>coming</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Active</label>
             <language>en</language>
             <name>x_arams_af_atteste_attestation_register</name>
             <sequence>2</sequence>
             <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 12:17:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>76445895715c24144a40604d772bb512</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-16 11:07:55</sys_updated_on>
+            <value>active</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Aktiv</label>
+            <language>sv</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>2</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-24 12:48:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>dc2b5727e0a4e8104a4080555269a69d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-24 12:48:17</sys_updated_on>
+            <value>active</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retired</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>3</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-04 10:47:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>aeaf7fc5719824144a40604d772bb524</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-16 11:07:55</sys_updated_on>
+            <value>retired</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Utgången</label>
+            <language>sv</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>3</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-11-24 12:48:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>e14b1f27e0a4e8104a4080555269a618</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-11-24 12:48:55</sys_updated_on>
+            <value>retired</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Avslagen</label>
+            <language>sv</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>4</sequence>
+            <sys_created_by>velan</sys_created_by>
             <sys_created_on>2020-11-04 10:47:24</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>22af7fc5719824144a40604d772bb524</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 12:17:32</sys_updated_on>
+            <sys_updated_on>2020-11-24 12:49:08</sys_updated_on>
             <value>rejected</value>
         </sys_choice>
-        <sys_choice_set action="INSERT_OR_UPDATE">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
             <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Återkallad</label>
+            <language>sv</language>
             <name>x_arams_af_atteste_attestation_register</name>
-            <sys_class_name>sys_choice_set</sys_class_name>
+            <sequence>5</sequence>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:24</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
-            <sys_id>22af7fc5719824144a40604d772bb516</sys_id>
+            <sys_created_on>2021-01-07 13:00:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>99d3ce7db12520d84a40438edee30338</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>u_state</sys_name>
-            <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
-            <sys_policy/>
-            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-            <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
-            <sys_update_name>sys_choice_x_arams_af_atteste_attestation_register_u_state</sys_update_name>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 10:47:24</sys_updated_on>
-        </sys_choice_set>
+            <sys_updated_on>2021-01-07 13:00:17</sys_updated_on>
+            <value>recalled</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Recalled</label>
+            <language>en</language>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <sequence>5</sequence>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2021-01-07 13:00:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>09e38abdb12520d84a40438edee3038c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2021-01-07 13:00:33</sys_updated_on>
+            <value>recalled</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

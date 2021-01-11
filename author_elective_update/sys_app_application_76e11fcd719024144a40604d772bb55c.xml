@@ -53,7 +53,7 @@
         <update_guid_history>3ee11fcdc7902414c718627be1007d5e:1615717192</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 2020-11-04 11:40:52">762ebbc1719824144a40604d772bb5a1</sys_audit_delete>
+        <sys_audit_delete display_value="">762ebbc1719824144a40604d772bb5a1</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>velan</sys_created_by>
         <sys_created_on>2020-11-04 10:40:52</sys_created_on>

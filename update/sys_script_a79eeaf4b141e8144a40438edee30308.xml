@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>cmn_cost_center</collection>
+        <condition/>
+        <description>Kostnadsställe byter organisation (department ändras)&#13;
+	- Skapar ärende, tar bort attesträtter för gamla organisationen&#13;
+        - Skapar ärende, skapar attesträtter för nya organisationen (tar bort alla attesträtter på det kst)</description>
+        <execute_function>false</execute_function>
+        <filter_condition table="cmn_cost_center">u_departmentVALCHANGES^EQ<item endquery="false" field="u_department" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Af Attestera - Department changes on cost center</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var errand_type = gs.getProperty('x_arams_af_atteste.attest_errand_type');
+    var gener_cat = gs.getProperty('x_arams_af_atteste.cc_change_of_dept');
+
+    if (current.u_department.dept_head != previous.u_department.dept_head) {
+
+        //Create GenErr to delete attestations 
+        var ge = new GlideRecord('x_arams_af_gen_err_af_generic_errands_table');
+        ge.newRecord();
+        ge.setValue('state', '2');
+        ge.setValue('u_flow_state', '3_1');
+        ge.setValue('category', gener_cat);
+        ge.setValue('x_arams_af_gen_err_errand_classification', 'attest');
+        ge.setValue('errand_type', errand_type);
+        ge.setValue('contact_person', current.u_department.dept_head.manager);
+        ge.setValue('short_description', 'Kostnadsställe ' + current.getDisplayValue() + 'har bytt organisation.');
+        ge.setValue('description', 'Ta bort samtliga attesträtter för kostnadsställe: ' + current.getDisplayValue() + '.');
+        ge.update();
+
+        //Retire attestations
+        var att = new GlideRecord('x_arams_af_atteste_attestation_register');
+        att.addQuery('u_cost_center', current.getUniqueValue());
+        att.query();
+        while (att.next()) {
+            att.setValue('u_state', 'retired');
+            att.update();
+        }
+
+        //Create GenErr to add attestation manager on new dept on current cc
+        var ge2 = new GlideRecord('x_arams_af_gen_err_af_generic_errands_table');
+        ge2.newRecord();
+        ge2.setValue('state', '2');
+        ge2.setValue('u_flow_state', '3_1');
+        ge2.setValue('category', gener_cat);
+        ge2.setValue('x_arams_af_gen_err_errand_classification', 'attest');
+        ge2.setValue('errand_type', errand_type);
+        ge2.setValue('u_object', current.u_department.dept_head);
+        ge2.setValue('contact_person', current.u_department.dept_head.manager);
+        ge2.setValue('short_description', 'Kostnadsställe ' + current.getDisplayValue() + 'har bytt organisation.');
+        ge2.setValue('description', 'Lägg till attesträtt för kostnadsställe: ' + current.getDisplayValue() + ' till ' + current.u_department.dept_head + '.');
+        ge2.update();
+
+
+        //Create attest reg for new manager on current cc
+        var gr = new GlideRecord('x_arams_af_atteste_attestation_register');
+        gr.initialize();
+        gr.setValue('u_state', 'requested');
+        gr.setValue('u_cost_center', current.getUniqueValue());
+        gr.setValue('u_user', current.u_department.dept_head);
+        gr.setValue('manager', current.u_department.dept_head.manager);
+        gr.setValue('u_attest_err', ge2.getUniqueValue());
+        // gr.setValue('u_system', producer.system.getDisplayValue());
+        gr.setValue('u_valid_from', new GlideDate());
+       // gr.setWorkflow(false);
+        gr.insert();
+
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-10 17:01:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>a79eeaf4b141e8144a40438edee30308</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Af Attestera - Department changes on cost center</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_script_a79eeaf4b141e8144a40438edee30308</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-17 10:44:01</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>

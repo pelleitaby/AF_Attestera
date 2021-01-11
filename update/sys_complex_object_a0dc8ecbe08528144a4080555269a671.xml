@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDecdc8ecbb2852814864c3c1b7cf40570</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>ad0596bc71dc20144a40604d772bb5e9</scope_name>
+        <serialized_content>{"FlowDesigner:FDecdc8ecbb2852814864c3c1b7cf40570":{"cost_centers_output_child0":"String","cost_centers_output_child0.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"cost_centers_output_child0\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"d86a49c8-bbc5-41be-b6a2-7ed2e6e100a5\"}"}},"FlowDesigner:FDecdc8ecbb2852814864c3c1b7cf40570.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"189746ab-5e50-4c44-a21f-3d88967f75f1\",\"default_value\":\"\",\"label\":\"cost_centers\",\"mandatory\":\"false\",\"uiUniqueId\":\"a2a82af3-33cb-4bd9-b600-f1892eb0c67d\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDecdc8ecbb2852814864c3c1b7cf40570\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"01180d0a-a308-467e-86f1-a1faa861b98b\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-17 14:20:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>a0dc8ecbe08528144a4080555269a671</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FDecdc8ecbb2852814864c3c1b7cf40570</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_complex_object_a0dc8ecbe08528144a4080555269a671</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-17 14:27:03</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

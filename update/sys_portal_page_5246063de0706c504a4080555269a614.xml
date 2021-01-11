@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2021-01-11 09:14:12">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>repan</sys_created_by>
+        <sys_created_on>2020-12-01 06:23:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>5246063de0706c504a4080555269a614</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Attestera Overview - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_portal_page_5246063de0706c504a4080555269a614</sys_update_name>
+        <sys_updated_by>repan</sys_updated_by>
+        <sys_updated_on>2020-12-01 06:23:56</sys_updated_on>
+        <title>PA Attestera Overview - New Tab</title>
+        <user/>
+        <view>pa_attestera_overview_-_new_tab_1</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Attestera Overview - New Tab">5246063de0706c504a4080555269a614</page>
+                <summary>Antal beställda Attesträtter</summary>
+                <sys_created_by>repan</sys_created_by>
+                <sys_created_on>2020-12-01 06:25:14</sys_created_on>
+                <sys_id>1d9606f9e0706c504a4080555269a617</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>repan</sys_updated_by>
+                <sys_updated_on>2020-12-01 06:25:14</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:14">1d9606f9e0706c504a4080555269a617</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:14</sys_created_on>
+                        <sys_id>1996027de0706c504a4080555269a621</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:14</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:14">1d9606f9e0706c504a4080555269a617</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:14</sys_created_on>
+                        <sys_id>1d96027de0706c504a4080555269a620</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:14</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:14">1d9606f9e0706c504a4080555269a617</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:14</sys_created_on>
+                        <sys_id>5196027de0706c504a4080555269a622</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:14</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:14">1d9606f9e0706c504a4080555269a617</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:14</sys_created_on>
+                        <sys_id>5596027de0706c504a4080555269a621</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:14</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:14">1d9606f9e0706c504a4080555269a617</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:14</sys_created_on>
+                        <sys_id>9196027de0706c504a4080555269a621</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:14</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:14">1d9606f9e0706c504a4080555269a617</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:14</sys_created_on>
+                        <sys_id>d596027de0706c504a4080555269a620</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:14</sys_updated_on>
+                        <value>a0af536fe0a4e8104a4080555269a622</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:14">1d9606f9e0706c504a4080555269a617</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:14</sys_created_on>
+                        <sys_id>d996027de0706c504a4080555269a621</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:14</sys_updated_on>
+                        <value>Antal beställda Attesträtter</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:14">1d9606f9e0706c504a4080555269a617</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:14</sys_created_on>
+                        <sys_id>dd96027de0706c504a4080555269a620</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:14</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Attestera Overview - New Tab">5246063de0706c504a4080555269a614</page>
+                <summary>Antal kommande Attesträtter</summary>
+                <sys_created_by>repan</sys_created_by>
+                <sys_created_on>2020-12-01 06:25:20</sys_created_on>
+                <sys_id>3a964a3de0706c504a4080555269a6e5</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>repan</sys_updated_by>
+                <sys_updated_on>2020-12-01 06:25:20</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:20">3a964a3de0706c504a4080555269a6e5</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:20</sys_created_on>
+                        <sys_id>03964a3de0706c504a4080555269a6e7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:20</sys_updated_on>
+                        <value>Antal kommande Attesträtter</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:20">3a964a3de0706c504a4080555269a6e5</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:20</sys_created_on>
+                        <sys_id>36964a3de0706c504a4080555269a6e6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:20</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:20">3a964a3de0706c504a4080555269a6e5</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:20</sys_created_on>
+                        <sys_id>3e964a3de0706c504a4080555269a6e5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:20</sys_updated_on>
+                        <value>80bfdf6fe0a4e8104a4080555269a675</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:20">3a964a3de0706c504a4080555269a6e5</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:20</sys_created_on>
+                        <sys_id>4f964a3de0706c504a4080555269a6e6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:20</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:20">3a964a3de0706c504a4080555269a6e5</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:20</sys_created_on>
+                        <sys_id>72964a3de0706c504a4080555269a6e6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:20</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:20">3a964a3de0706c504a4080555269a6e5</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:20</sys_created_on>
+                        <sys_id>87964a3de0706c504a4080555269a6e7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:20</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:20">3a964a3de0706c504a4080555269a6e5</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:20</sys_created_on>
+                        <sys_id>8b964a3de0706c504a4080555269a6e6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:20</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:20">3a964a3de0706c504a4080555269a6e5</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:20</sys_created_on>
+                        <sys_id>c7964a3de0706c504a4080555269a6e6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:20</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Attestera Overview - New Tab">5246063de0706c504a4080555269a614</page>
+                <summary>Antal aktiva Attesträtter</summary>
+                <sys_created_by>repan</sys_created_by>
+                <sys_created_on>2020-12-01 06:25:09</sys_created_on>
+                <sys_id>449686f9e0706c504a4080555269a6bd</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>repan</sys_updated_by>
+                <sys_updated_on>2020-12-01 06:25:09</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:09">449686f9e0706c504a4080555269a6bd</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:09</sys_created_on>
+                        <sys_id>049686f9e0706c504a4080555269a6be</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:09</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:09">449686f9e0706c504a4080555269a6bd</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:09</sys_created_on>
+                        <sys_id>409686f9e0706c504a4080555269a6be</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:09</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:09">449686f9e0706c504a4080555269a6bd</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:09</sys_created_on>
+                        <sys_id>489686f9e0706c504a4080555269a6bd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:09</sys_updated_on>
+                        <value>b87f936fe0a4e8104a4080555269a667</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:09">449686f9e0706c504a4080555269a6bd</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:09</sys_created_on>
+                        <sys_id>4c9686f9e0706c504a4080555269a6be</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:09</sys_updated_on>
+                        <value>Antal aktiva Attesträtter</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:09">449686f9e0706c504a4080555269a6bd</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:09</sys_created_on>
+                        <sys_id>889686f9e0706c504a4080555269a6be</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:09</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:09">449686f9e0706c504a4080555269a6bd</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:09</sys_created_on>
+                        <sys_id>8c9686f9e0706c504a4080555269a6bd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:09</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:09">449686f9e0706c504a4080555269a6bd</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:09</sys_created_on>
+                        <sys_id>c09686f9e0706c504a4080555269a6bf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:09</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:09">449686f9e0706c504a4080555269a6bd</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:09</sys_created_on>
+                        <sys_id>c49686f9e0706c504a4080555269a6be</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:09</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Attestera Overview - New Tab">5246063de0706c504a4080555269a614</page>
+                <summary>Kostnadsställen utan giltig Attesträtt</summary>
+                <sys_created_by>repan</sys_created_by>
+                <sys_created_on>2020-12-01 06:25:34</sys_created_on>
+                <sys_id>9ea6caf9e0706c504a4080555269a644</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>repan</sys_updated_by>
+                <sys_updated_on>2020-12-01 06:25:34</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:34">9ea6caf9e0706c504a4080555269a644</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:34</sys_created_on>
+                        <sys_id>12a6caf9e0706c504a4080555269a646</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:34</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:34">9ea6caf9e0706c504a4080555269a644</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:34</sys_created_on>
+                        <sys_id>1ea6caf9e0706c504a4080555269a646</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:34</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:34">9ea6caf9e0706c504a4080555269a644</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:34</sys_created_on>
+                        <sys_id>5ea6caf9e0706c504a4080555269a645</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:34</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:34">9ea6caf9e0706c504a4080555269a644</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:34</sys_created_on>
+                        <sys_id>92a6caf9e0706c504a4080555269a645</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:34</sys_updated_on>
+                        <value>21a12ba3e0e4e8104a4080555269a617</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:34">9ea6caf9e0706c504a4080555269a644</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:34</sys_created_on>
+                        <sys_id>96a6caf9e0706c504a4080555269a646</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:34</sys_updated_on>
+                        <value>Kostnadsställen utan giltig Attesträtt</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:34">9ea6caf9e0706c504a4080555269a644</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:34</sys_created_on>
+                        <sys_id>9aa6caf9e0706c504a4080555269a645</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:34</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:34">9ea6caf9e0706c504a4080555269a644</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:34</sys_created_on>
+                        <sys_id>d2a6caf9e0706c504a4080555269a646</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:34</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:34">9ea6caf9e0706c504a4080555269a644</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:34</sys_created_on>
+                        <sys_id>d6a6caf9e0706c504a4080555269a645</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:34</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Attestera Overview - New Tab">5246063de0706c504a4080555269a614</page>
+                <summary>Antal aktiva Attesträtter per kostnadsställe</summary>
+                <sys_created_by>repan</sys_created_by>
+                <sys_created_on>2020-12-01 06:25:03</sys_created_on>
+                <sys_id>a6864ef9e0706c504a4080555269a698</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>repan</sys_updated_by>
+                <sys_updated_on>2020-12-01 06:25:03</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:03">a6864ef9e0706c504a4080555269a698</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:03</sys_created_on>
+                        <sys_id>3a864ef9e0706c504a4080555269a699</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:03</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:03">a6864ef9e0706c504a4080555269a698</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:03</sys_created_on>
+                        <sys_id>76864ef9e0706c504a4080555269a699</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:03</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:03">a6864ef9e0706c504a4080555269a698</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:03</sys_created_on>
+                        <sys_id>aa864ef9e0706c504a4080555269a698</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:03</sys_updated_on>
+                        <value>c23323a7e0e4e8104a4080555269a6f2</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:03">a6864ef9e0706c504a4080555269a698</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:03</sys_created_on>
+                        <sys_id>b2864ef9e0706c504a4080555269a699</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:03</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:03">a6864ef9e0706c504a4080555269a698</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:03</sys_created_on>
+                        <sys_id>fa864ef9e0706c504a4080555269a699</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:03</sys_updated_on>
+                        <value>Antal aktiva Attesträtter per kostnadsställe</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:03">a6864ef9e0706c504a4080555269a698</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:03</sys_created_on>
+                        <sys_id>fe864ef9e0706c504a4080555269a698</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:03</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Attestera Overview - New Tab">5246063de0706c504a4080555269a614</page>
+                <summary>Kostnadsställen med giltig Attesträtt</summary>
+                <sys_created_by>repan</sys_created_by>
+                <sys_created_on>2020-12-01 06:25:42</sys_created_on>
+                <sys_id>d4b6827de0706c504a4080555269a6d9</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>repan</sys_updated_by>
+                <sys_updated_on>2020-12-01 06:25:42</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:42">d4b6827de0706c504a4080555269a6d9</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:42</sys_created_on>
+                        <sys_id>10b6827de0706c504a4080555269a6da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:42</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:42">d4b6827de0706c504a4080555269a6d9</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:42</sys_created_on>
+                        <sys_id>1cb6827de0706c504a4080555269a6da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:42</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:42">d4b6827de0706c504a4080555269a6d9</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:42</sys_created_on>
+                        <sys_id>54b6827de0706c504a4080555269a6db</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:42</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:42">d4b6827de0706c504a4080555269a6d9</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:42</sys_created_on>
+                        <sys_id>58b6827de0706c504a4080555269a6da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:42</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:42">d4b6827de0706c504a4080555269a6d9</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:42</sys_created_on>
+                        <sys_id>94b6827de0706c504a4080555269a6da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:42</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:42">d4b6827de0706c504a4080555269a6d9</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:42</sys_created_on>
+                        <sys_id>d0b6827de0706c504a4080555269a6da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:42</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:42">d4b6827de0706c504a4080555269a6d9</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:42</sys_created_on>
+                        <sys_id>d8b6827de0706c504a4080555269a6d9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:42</sys_updated_on>
+                        <value>5331e323e0e4e8104a4080555269a619</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:42">d4b6827de0706c504a4080555269a6d9</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:42</sys_created_on>
+                        <sys_id>dcb6827de0706c504a4080555269a6da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:42</sys_updated_on>
+                        <value>Kostnadsställen med giltig Attesträtt</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Attestera Overview - New Tab">5246063de0706c504a4080555269a614</page>
+                <summary>Antal aktiva Attesträtter per chef</summary>
+                <sys_created_by>repan</sys_created_by>
+                <sys_created_on>2020-12-01 06:24:58</sys_created_on>
+                <sys_id>e186063de0706c504a4080555269a692</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>repan</sys_updated_by>
+                <sys_updated_on>2020-12-01 06:24:58</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2020-12-01 07:24:58">e186063de0706c504a4080555269a692</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:24:58</sys_created_on>
+                        <sys_id>2186063de0706c504a4080555269a694</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:24:58</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2020-12-01 07:24:58">e186063de0706c504a4080555269a692</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:24:58</sys_created_on>
+                        <sys_id>6986063de0706c504a4080555269a694</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:24:58</sys_updated_on>
+                        <value>Antal aktiva Attesträtter per chef</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2020-12-01 07:24:58">e186063de0706c504a4080555269a692</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:24:58</sys_created_on>
+                        <sys_id>6d86063de0706c504a4080555269a693</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:24:58</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2020-12-01 07:24:58">e186063de0706c504a4080555269a692</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:24:58</sys_created_on>
+                        <sys_id>a586063de0706c504a4080555269a694</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:24:58</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2020-12-01 07:24:58">e186063de0706c504a4080555269a692</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:24:58</sys_created_on>
+                        <sys_id>e186063de0706c504a4080555269a694</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:24:58</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2020-12-01 07:24:58">e186063de0706c504a4080555269a692</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:24:58</sys_created_on>
+                        <sys_id>ed86063de0706c504a4080555269a692</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:24:58</sys_updated_on>
+                        <value>f184afe7e0e4e8104a4080555269a6c7</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Attestera Overview - New Tab">5246063de0706c504a4080555269a614</page>
+                <summary>Kostnadsställen helt utan Attesträtter</summary>
+                <sys_created_by>repan</sys_created_by>
+                <sys_created_on>2020-12-01 06:25:27</sys_created_on>
+                <sys_id>eca686f9e0706c504a4080555269a668</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>repan</sys_updated_by>
+                <sys_updated_on>2020-12-01 06:25:27</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:27">eca686f9e0706c504a4080555269a668</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:27</sys_created_on>
+                        <sys_id>24a686f9e0706c504a4080555269a66a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:27</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:27">eca686f9e0706c504a4080555269a668</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:27</sys_created_on>
+                        <sys_id>28a686f9e0706c504a4080555269a669</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:27</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:27">eca686f9e0706c504a4080555269a668</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:27</sys_created_on>
+                        <sys_id>60a686f9e0706c504a4080555269a66a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:27</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:27">eca686f9e0706c504a4080555269a668</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:27</sys_created_on>
+                        <sys_id>6ca686f9e0706c504a4080555269a66a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:27</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:27">eca686f9e0706c504a4080555269a668</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:27</sys_created_on>
+                        <sys_id>aca686f9e0706c504a4080555269a669</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:27</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:27">eca686f9e0706c504a4080555269a668</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:27</sys_created_on>
+                        <sys_id>e0a686f9e0706c504a4080555269a669</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:27</sys_updated_on>
+                        <value>2040a3efe0a4e8104a4080555269a668</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:27">eca686f9e0706c504a4080555269a668</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:27</sys_created_on>
+                        <sys_id>e4a686f9e0706c504a4080555269a66a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:27</sys_updated_on>
+                        <value>Kostnadsställen helt utan Attesträtter</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2020-12-01 07:25:27">eca686f9e0706c504a4080555269a668</portal_section>
+                        <sys_created_by>repan</sys_created_by>
+                        <sys_created_on>2020-12-01 06:25:27</sys_created_on>
+                        <sys_id>e8a686f9e0706c504a4080555269a669</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>repan</sys_updated_by>
+                        <sys_updated_on>2020-12-01 06:25:27</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

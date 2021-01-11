@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
-        <catalog_item display_value="Attestera">43a4d8d5715c24144a40604d772bb5f0</catalog_item>
+        <catalog_item/>
         <catalog_variable>IO:ffc81c91719c24144a40604d772bb515</catalog_variable>
         <cleared>false</cleared>
         <disabled>true</disabled>

@@ -17,5 +17,6 @@
         <sys_updated_on>2020-11-06 09:50:29</sys_updated_on>
         <sys_user_role display_value="x_arams_af_atteste.admin" name="x_arams_af_atteste.admin">17259efc71dc20144a40604d772bb53d</sys_user_role>
         <transaction_id/>
+        <u_group/>
     </sys_security_acl_role>
 </record_update>

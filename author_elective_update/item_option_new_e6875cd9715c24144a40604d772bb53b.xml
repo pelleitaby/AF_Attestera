@@ -174,7 +174,7 @@
         <update_guid_history>d48ad019f49c24142496e47ef057e5af:1269219263,d88ad019d69c24140ad7de3252a592ac:111252975,ac18dcddaa5c2414e69133e325a7910b:-707829781,e308dc9d8c5c241430794a52420044e1:1671018283,41a7585da95c2414da698a30b81a208c:-566125944</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 2020-11-04 13:52:56">196c18dd719c24144a40604d772bb5d2</sys_audit_delete>
+        <sys_audit_delete display_value="">196c18dd719c24144a40604d772bb5d2</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>velan</sys_created_by>
         <sys_created_on>2020-11-04 12:52:56</sys_created_on>
@@ -185,7 +185,7 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Valid from</sys_name>
         <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
-        <sys_parent display_value="Attestera">43a4d8d5715c24144a40604d772bb5f0</sys_parent>
+        <sys_parent display_value="">43a4d8d5715c24144a40604d772bb5f0</sys_parent>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>cmn_cost_center</collection>
+        <condition/>
+        <description>Skapar ärende, tar bort attesträtter för gamla organisationen&#13;
+Skapar ärende, skapar attesträtter för nya organisationen</description>
+        <execute_function>false</execute_function>
+        <filter_condition table="cmn_cost_center">u_departmentVALCHANGES^EQ<item endquery="false" field="u_department" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>AF Attestera - Cost center changes department OLD</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    //Deactivate attestation registers for current cost center and create attestation errands for each
+    var att = new GlideRecord('x_arams_af_atteste_attestation_register');
+    att.addQuery('u_cost_center', current);
+    att.query();
+    while (gr.next()) {
+        att.setValue('state', 'retired'); //Retire att reg
+        att.update();
+		
+		var errand_type = gs.getProperty('x_arams_af_atteste.attest_errand_type');
+		var gener_cat = gs.getProperty('x_arams_af_atteste.delegation_of_attestation');
+		//Create att errand
+        var att_err = new GlideRecord('x_arams_af_gen_err_af_generic_errands_table');
+        att_err.initialize(); 
+        att_err.newRecord();
+        att_err.setValue('state', '3');
+        att_err.setValue('u_flow_state', '3_1');
+        att_err.setValue('category', gener_cat);
+        att_err.setValue('x_arams_af_gen_err_errand_classification', 'attest');
+        att_err.setValue('errand_type', errand_type);
+        att_err.setValue('u_object', att.u_user);
+        att_err.setValue('contact_person', att.manager);
+        att_err.setValue('short_description', 'Kostnadsställe: ' + current.getDisplayValue() + ' byter organisation.');
+        att_err.setValue('description',' Ta bort attesträtt för ' + att.u_user.getDisplayValue() + ' på '+ current.getDisplayValue()+'. Gäller för system: '+att.u_system +'.');
+        att_err.insert();
+    }
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-02 08:32:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>57c1e7c6b17c2c904a40438edee30339</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>AF Attestera - Cost center changes department OLD</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_script_57c1e7c6b17c2c904a40438edee30339</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-16 13:14:30</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>

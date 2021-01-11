@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_arams_af_atteste.AF_AttesteraUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AF_AttesteraUtils</name>
+        <script><![CDATA[var AF_AttesteraUtils = Class.create();
+AF_AttesteraUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getAllCostCenters: function() {
+        var ccList = [];
+        var cc = new GlideRecord('cmn_cost_center');
+        cc.addEncodedQuery('valid_to>=javascript:gs.beginningOfToday()^valid_from<=javascript:gs.endOfToday()');
+        cc.query();
+        while (cc.next()) {
+            ccList.push(cc.getValue('sys_id'));
+        }
+        //gs.info('----------answer: ' + ccList.join(','));
+        return ccList.join(',');
+    },
+
+    getCostCenters: function(dep) {
+        var ccList = [];
+        var cc = new GlideRecord('cmn_cost_center');
+        cc.addQuery('u_department.sys_id', dep);
+        cc.addQuery('valid_from', '<=', gs.beginningOfToday());
+        cc.addQuery('valid_to', '>=', gs.beginningOfToday());
+        cc.query();
+        while (cc.next()) {
+            ccList.push(cc.getValue('sys_id'));
+        }
+        var dept1 = new GlideRecord('cmn_department');
+        dept1.addQuery('parent', dep);
+        dept1.addQuery('u_active', true);
+        dept1.query();
+        while (dept1.next()) {
+            var cc1 = new GlideRecord('cmn_cost_center');
+            cc1.addQuery('u_department.sys_id', dept1.sys_id);
+            cc1.addQuery('valid_from', '<=', gs.beginningOfToday());
+            cc1.addQuery('valid_to', '>=', gs.beginningOfToday());
+            cc1.query();
+            while (cc1.next()) {
+                ccList.push(cc1.getValue('sys_id'));
+            }
+            var dept2 = new GlideRecord('cmn_department');
+            dept2.addQuery('parent', dept1.sys_id);
+            dept2.addQuery('u_active', true);
+            dept2.query();
+            while (dept2.next()) {
+                var cc2 = new GlideRecord('cmn_cost_center');
+                cc2.addQuery('u_department', dept2.sys_id);
+                cc2.addQuery('valid_from', '<=', gs.beginningOfToday());
+                cc2.addQuery('valid_to', '>=', gs.beginningOfToday());
+                cc2.query();
+                while (cc2.next()) {
+                    ccList.push(cc2.getValue('sys_id'));
+                }
+                var dept3 = new GlideRecord('cmn_department');
+                dept3.addQuery('parent', dept2.sys_id);
+                dept3.addQuery('u_active', true);
+                dept3.query();
+                while (dept3.next()) {
+                    var cc3 = new GlideRecord('cmn_cost_center');
+                    cc3.addQuery('u_department', dept3.sys_id);
+                    cc3.addQuery('valid_from', '<=', gs.beginningOfToday());
+                    cc3.addQuery('valid_to', '>=', gs.beginningOfToday());
+                    cc3.query();
+                    while (cc3.next()) {
+                        ccList.push(cc3.getValue('sys_id'));
+                    }
+                }
+            }
+        }
+        // gs.info('----------answer: ' + ccList.join(','));
+        return 'sys_idIN' + ccList.join(',');
+    },
+
+    getCostCentersArray: function(dep) {
+        var ccList = [];
+        var cc = new GlideRecord('cmn_cost_center');
+        cc.addQuery('u_department.sys_id', dep);
+        cc.addQuery('valid_from', '<=', gs.beginningOfToday());
+        cc.addQuery('valid_to', '>=', gs.beginningOfToday());
+        cc.query();
+        while (cc.next()) {
+            ccList.push(cc.getValue('sys_id'));
+        }
+        var dept1 = new GlideRecord('cmn_department');
+        dept1.addQuery('parent', dep);
+        dept1.addQuery('u_active', true);
+        dept1.query();
+        while (dept1.next()) {
+            var cc1 = new GlideRecord('cmn_cost_center');
+            cc1.addQuery('u_department.sys_id', dept1.sys_id);
+            cc1.addQuery('valid_from', '<=', gs.beginningOfToday());
+            cc1.addQuery('valid_to', '>=', gs.beginningOfToday());
+            cc1.query();
+            while (cc1.next()) {
+                ccList.push(cc1.getValue('sys_id'));
+            }
+            var dept2 = new GlideRecord('cmn_department');
+            dept2.addQuery('parent', dept1.sys_id);
+            dept2.addQuery('u_active', true);
+            dept2.query();
+            while (dept2.next()) {
+                var cc2 = new GlideRecord('cmn_cost_center');
+                cc2.addQuery('u_department', dept2.sys_id);
+                cc2.addQuery('valid_from', '<=', gs.beginningOfToday());
+                cc2.addQuery('valid_to', '>=', gs.beginningOfToday());
+                cc2.query();
+                while (cc2.next()) {
+                    ccList.push(cc2.getValue('sys_id'));
+                }
+                var dept3 = new GlideRecord('cmn_department');
+                dept3.addQuery('parent', dept2.sys_id);
+                dept3.addQuery('u_active', true);
+                dept3.query();
+                while (dept3.next()) {
+                    var cc3 = new GlideRecord('cmn_cost_center');
+                    cc3.addQuery('u_department', dept3.sys_id);
+                    cc3.addQuery('valid_from', '<=', gs.beginningOfToday());
+                    cc3.addQuery('valid_to', '>=', gs.beginningOfToday());
+                    cc3.query();
+                    while (cc3.next()) {
+                        ccList.push(cc3.getValue('sys_id'));
+                    }
+                }
+            }
+        }
+        // gs.info('----------answer: ' + ccList.join(','));
+        return ccList;
+    },
+
+    getCostCentersName: function(dep) {
+
+        var ccList = [];
+        var cc = new GlideRecord('cmn_cost_center');
+        cc.addQuery('u_department.sys_id', dep);
+        cc.addQuery('valid_from', '<=', gs.beginningOfToday());
+        cc.addQuery('valid_to', '>=', gs.beginningOfToday());
+        cc.query();
+        while (cc.next()) {
+            ccList.push(cc.getValue('name'));
+        }
+        var dept1 = new GlideRecord('cmn_department');
+        dept1.addQuery('parent', dep);
+        dept1.addQuery('u_active', true);
+        dept1.query();
+        while (dept1.next()) {
+            var cc1 = new GlideRecord('cmn_cost_center');
+
+            cc1.addQuery('u_department.sys_id', dept1.sys_id);
+            cc1.addQuery('valid_from', '<=', gs.beginningOfToday());
+            cc1.addQuery('valid_to', '>=', gs.beginningOfToday());
+            cc1.query();
+            while (cc1.next()) {
+                ccList.push(cc1.getValue('name'));
+            }
+            var dept2 = new GlideRecord('cmn_department');
+            dept2.addQuery('parent', dept1.sys_id);
+            dept2.addQuery('u_active', true);
+            dept2.query();
+            while (dept2.next()) {
+                var cc2 = new GlideRecord('cmn_cost_center');
+
+                cc2.addQuery('u_department', dept2.sys_id);
+                cc2.addQuery('valid_from', '<=', gs.beginningOfToday());
+                cc2.addQuery('valid_to', '>=', gs.beginningOfToday());
+                cc2.query();
+                while (cc2.next()) {
+                    ccList.push(cc2.getValue('name'));
+                }
+                var dept3 = new GlideRecord('cmn_department');
+                dept3.addQuery('parent', dept2.sys_id);
+                dept3.addQuery('u_active', true);
+                dept3.query();
+                while (dept3.next()) {
+                    var cc3 = new GlideRecord('cmn_cost_center');
+                    cc3.addQuery('u_department', dept3.sys_id);
+                    cc3.addQuery('valid_from', '<=', gs.beginningOfToday());
+                    cc3.addQuery('valid_to', '>=', gs.beginningOfToday());
+                    cc3.query();
+                    while (cc3.next()) {
+                        ccList.push(cc3.getValue('name'));
+                    }
+                }
+            }
+        }
+        //gs.info('----------answer: ' + ccList.join(','));
+        return ccList.join(',');
+    },
+
+    getDepartments: function() {
+        var dep_list = [];
+        var cc_counter = 0;
+        var dep_cc = new GlideRecord('cmn_department');
+        dep_cc.addNullQuery('parent');
+        dep_cc.addQuery('u_active', true);
+        dep_cc.query();
+        while (dep_cc.next()) {
+            cc_counter = 0;
+            var cc_d = new GlideRecord('cmn_cost_center');
+            cc_d.addQuery('u_department.sys_id', dep_cc.sys_id);
+            cc_d.addQuery('valid_from', '<=', gs.beginningOfToday());
+            cc_d.addQuery('valid_to', '>=', gs.beginningOfToday());
+            cc_d.query();
+            while (cc_d.next()) {
+                cc_counter++;
+            }
+            var dep_cc2 = new GlideRecord('cmn_department');
+            dep_cc2.addQuery('parent', dep_cc.sys_id);
+            dep_cc2.addQuery('u_active', true);
+            dep_cc2.query();
+            while (dep_cc2.next()) {
+                var cc_d2 = new GlideRecord('cmn_cost_center');
+                cc_d2.addQuery('u_department.sys_id', dep_cc2.sys_id);
+                cc_d2.addQuery('valid_from', '<=', gs.beginningOfToday());
+                cc_d2.addQuery('valid_to', '>=', gs.beginningOfToday());
+                cc_d2.query();
+                while (cc_d2.next()) {
+                    cc_counter++;
+                }
+                var dep_cc3 = new GlideRecord('cmn_department');
+                dep_cc3.addQuery('parent', dep_cc2.sys_id);
+                dep_cc3.addQuery('u_active', true);
+                dep_cc3.query();
+                while (dep_cc3.next()) {
+                    var cc_d3 = new GlideRecord('cmn_cost_center');
+                    cc_d3.addQuery('u_department.sys_id', dep_cc3.sys_id);
+                    cc_d3.addQuery('valid_from', '<=', gs.beginningOfToday());
+                    cc_d3.addQuery('valid_to', '>=', gs.beginningOfToday());
+                    cc_d3.query();
+                    while (cc_d3.next()) {
+                        cc_counter++;
+                    }
+                }
+            }
+            if (cc_counter > 0) {
+                dep_list.push(dep_cc.getValue('sys_id'));
+            }
+        }
+
+        return 'sys_idIN' + dep_list.join(',');
+    },
+
+    checkAttUsers: function() {
+        var attUser = false;
+        var createed_by_user = new GlideRecord('sys_user');
+        createed_by_user.get(gs.getUser().getID());
+
+
+        var att = new GlideRecord('x_arams_af_atteste_attestation_register');
+        att.addEncodedQuery('u_user=' + gs.getUser().getID() + '^ORmanager=' + gs.getUser().getID() + '^ORsys_created_by=' + createed_by_user.user_name);
+        att.query();
+        if (att.next()) {
+            attUser = true;
+        }
+        return attUser;
+
+    },
+
+    filterAttReg: function() {
+        var attRegList = [];
+
+        var created_by_user = new GlideRecord('sys_user');
+        created_by_user.get(gs.getUser().getID());
+
+
+        var att = new GlideRecord('x_arams_af_atteste_attestation_register');
+        att.addEncodedQuery('u_user=' + gs.getUser().getID() + '^ORmanager=' + gs.getUser().getID() + '^ORsys_created_by=' + created_by_user.user_name);
+        att.query();
+        while (att.next()) {
+            attRegList.push(att.getValue('sys_id'));
+        }
+        return attRegList.join(',');
+    },
+
+    filterSarReceiver: function() {
+        var filter_list = [];
+        var gr = new GlideRecord('cmn_department');
+        gr.addEncodedQuery('parent=ea8937e32c4780903a0660dececfa6ff^ORparent=eb6099ac4df0e0103a061c7bf8f4b682^NQsys_idSTARTSWITHeb6099ac4df0e0103a061c7bf8f4b682^ORsys_idSTARTSWITHea8937e32c4780903a0660dececfa6ff'); //enheten redovisning och rapportering eller undergrupp till enheten redovisning och rapportering.
+        gr.query();
+        while (gr.next()) {
+            //gs.info(gr.getDisplayValue());
+            var users = new GlideRecord('sys_user');
+            users.addQuery('department', gr.getUniqueValue());
+            users.query();
+            while (users.next()) {
+                //gs.info(users.getDisplayValue());
+                filter_list.push(users.getUniqueValue());
+            }
+        }
+        var gd = new GlideRecord('sys_user');
+        gd.addQuery('u_function_code', '10AA');
+        gd.query();
+        while (gd.next()) {
+            filter_list.push(gd.getUniqueValue());
+        }
+        return filter_list.join(',');
+    },
+
+    getUsersAtt: function(user) {
+        var usersAttList = [];
+        var att = new GlideRecord('x_arams_af_atteste_attestation_register');
+		att.addEncodedQuery('u_user='+user+'^u_state=active^ORu_state=requested^ORu_state=coming');
+		att.query();
+		while (att.next()){
+			usersAttList.push(att.getUniqueValue());
+		}
+           return 'sys_idIN' + usersAttList.join(',');
+    },
+
+    type: 'AF_AttesteraUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-18 13:17:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>05c768b1146060504a401b656f624ff0</sys_id>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_name>AF_AttesteraUtils</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_script_include_05c768b1146060504a401b656f624ff0</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2021-01-08 15:38:37</sys_updated_on>
+    </sys_script_include>
+</record_update>

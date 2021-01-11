@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-paris-06-24-2020__patch3-10-29-2020</compiler_build>
+        <copied_from>3a8a0687e08528144a4080555269a6e5</copied_from>
+        <copied_from_name>Af_Attestera_DeptHead_Changes</copied_from_name>
+        <description>Chef byts på en organisation (Department head ändras på Department)
+
+- Skapar ärende, Tar bort attesträtter för den gamla chefen för KST kopplade till organisation</description>
+        <internal_name>copy_of_af_attestera_depthead_changes</internal_name>
+        <label_cache>[{"name":"1db9de8a-583f-4c2d-a528-08c7a4a46037.Record.name","label":"2➛User Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"1db9de8a-583f-4c2d-a528-08c7a4a46037.Record.manager","label":"2➛User Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"5d5e7b0e-b9b6-4b2d-9a13-2ece1212ac82.table_name","label":"5➛Generic Errands Table","reference":"x_arams_af_gen_err_af_generic_errands_table","reference_display":"Generic Errands Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5d5e7b0e-b9b6-4b2d-9a13-2ece1212ac82.record","label":"5➛Generic Errands Record","reference":"x_arams_af_gen_err_af_generic_errands_table","reference_display":"Generic Errands Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c75306c-6aa4-4318-887a-57018b72d73e.error_message","label":"5➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"5c75306c-6aa4-4318-887a-57018b72d73e.status","label":"5➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"5c75306c-6aa4-4318-887a-57018b72d73e.table_name","label":"5➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"5c75306c-6aa4-4318-887a-57018b72d73e.record","label":"5➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"2745b2bd-32be-4844-b85d-edff7ea88b44.Record.name","label":"3➛User Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"2745b2bd-32be-4844-b85d-edff7ea88b44.Record.manager","label":"3➛User Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"2745b2bd-32be-4844-b85d-edff7ea88b44.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"2745b2bd-32be-4844-b85d-edff7ea88b44.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"2745b2bd-32be-4844-b85d-edff7ea88b44.Table","label":"3➛User Table","reference":"sys_user","reference_display":"User Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2745b2bd-32be-4844-b85d-edff7ea88b44.Record","label":"3➛User Record","reference":"sys_user","reference_display":"User Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1db9de8a-583f-4c2d-a528-08c7a4a46037.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"1db9de8a-583f-4c2d-a528-08c7a4a46037.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"1db9de8a-583f-4c2d-a528-08c7a4a46037.Table","label":"2➛User Table","reference":"sys_user","reference_display":"User Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1db9de8a-583f-4c2d-a528-08c7a4a46037.Record","label":"2➛User Record","reference":"sys_user","reference_display":"User Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"25554a72-2424-4fe7-9d01-3f4a517f3336.current_department_head.name","label":"4➛Current department head➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"25554a72-2424-4fe7-9d01-3f4a517f3336.current_department_head.manager","label":"4➛Current department head➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"da9ab9cb-ba7f-4b69-938a-466bf4945fb6.table_name","label":"6➛Generic Errands Table","reference":"x_arams_af_gen_err_af_generic_errands_table","reference_display":"Generic Errands Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da9ab9cb-ba7f-4b69-938a-466bf4945fb6.record","label":"6➛Generic Errands Record","reference":"x_arams_af_gen_err_af_generic_errands_table","reference_display":"Generic Errands Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"338d66b8-a9ec-4158-8d03-6be58c93044d.table_name","label":"6➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"338d66b8-a9ec-4158-8d03-6be58c93044d.record","label":"6➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"test_input_hidden":"true"}},{"name":"232150fe-031d-4ce5-9dab-249aa2fb44b6.table_name","label":"9➛Attestation register Table","reference":"x_arams_af_atteste_attestation_register","reference_display":"Attestation register Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"232150fe-031d-4ce5-9dab-249aa2fb44b6.record","label":"9➛Attestation register Record","reference":"x_arams_af_atteste_attestation_register","reference_display":"Attestation register Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.name","label":"Trigger➛Department Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_department","column_name":"name"},{"name":"25554a72-2424-4fe7-9d01-3f4a517f3336.previous_department_head.manager","label":"4➛Previous department head➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"827b66d2-7755-4854-9a09-77867dbae705.item.current_value","label":"1➛FDChangeDetails➛Current Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"827b66d2-7755-4854-9a09-77867dbae705.item.previous_value","label":"1➛FDChangeDetails➛Previous Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"25554a72-2424-4fe7-9d01-3f4a517f3336.current_department_head","label":"4➛Current department head","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6b99e25d-dfec-497a-8112-f58d6f39268f"}},{"name":"25554a72-2424-4fe7-9d01-3f4a517f3336.previous_department_head","label":"4➛Previous department head","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"73009918-5a19-4ad2-8308-c2160017413d"}},{"name":"827b66d2-7755-4854-9a09-77867dbae705.item","label":"1➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.changed_fields","label":"Trigger➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"1d83682c-2be5-4221-b72c-c52819825aa0.table_name","label":"5➛Generic Errands Table","reference":"x_arams_af_gen_err_af_generic_errands_table","reference_display":"Generic Errands","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1d83682c-2be5-4221-b72c-c52819825aa0.record","label":"5➛Generic Errands Record","reference":"x_arams_af_gen_err_af_generic_errands_table","reference_display":"Generic Errands","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e74a975a-a8e6-4260-8031-f4de425906d2.message","label":"7➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"eae4ca7a-5ba6-465c-b7bd-6ba1cf184947"}},{"name":"e74a975a-a8e6-4260-8031-f4de425906d2.status","label":"7➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"828e2127-df28-4eda-af48-ee4e876cca1e"}},{"name":"e74a975a-a8e6-4260-8031-f4de425906d2.count","label":"7➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"edb3c082-a356-4943-a263-55232fc02390"}},{"name":"124e68f0-7385-4094-828e-e235e11ed4eb.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"124e68f0-7385-4094-828e-e235e11ed4eb.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4f2553c9-2cb6-4c5a-9df4-3f2a14909eb4.Count","label":"8➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4f2553c9-2cb6-4c5a-9df4-3f2a14909eb4.Table","label":"8➛Attestation register Table","reference":"x_arams_af_atteste_attestation_register","reference_display":"Attestation register","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4f2553c9-2cb6-4c5a-9df4-3f2a14909eb4.Records","label":"8➛Attestation register Records","reference":"x_arams_af_atteste_attestation_register","reference_display":"Attestation register","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4825b91-e804-47fe-b3bf-edb5b19aff01.item","label":"6➛Cost Center Record","reference":"cmn_cost_center","reference_display":"Cost Center Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.current","label":"Trigger➛Department Record","reference":"cmn_department","reference_display":"Department","type":"reference","base_type":"reference","attributes":{}},{"name":"80e50940-4875-4fba-8cbe-0516dbbef403.Count","label":"4➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80e50940-4875-4fba-8cbe-0516dbbef403.Table","label":"4➛Cost Center Table","reference":"cmn_cost_center","reference_display":"Cost Center Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"80e50940-4875-4fba-8cbe-0516dbbef403.Records","label":"4➛Cost Center Records","reference":"cmn_cost_center","reference_display":"Cost Center Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3547b44d-8cbb-4bce-b279-9dde7442ea4b.cost_centers","label":"1➛Cost Center Records","reference":"cmn_cost_center","reference_display":"Cost Center","type":"records","base_type":"records","attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a2a82af3-33cb-4bd9-b600-f1892eb0c67d"}},{"name":"11849359-7a99-4a00-b872-fbd3e495f5e0.cost_centers","label":"1➛cost_centers","reference_display":"cost_centers","type":"array.object","base_type":"array.object","attributes":{"sourceId":"189746ab-5e50-4c44-a21f-3d88967f75f1","child_name":"cost_centers_output_child0","uiUniqueId":"a2a82af3-33cb-4bd9-b600-f1892eb0c67d","uiTypeLabel":"Array.Object","co_type_name":"FD3c10d6c3ccc528140c563fd8deaf79b3","child_label":"cost_centers_output_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"01180d0a-a308-467e-86f1-a1faa861b98b","uiType":"array.object","child_type":"object","child_uiUniqueId":"2dcc9fab-6cfe-4a3c-9913-aee0d6bc9c4d"}},{"name":"90924c7f-447c-4312-9096-ccf1894632c9.cost_centers","label":"1➛Cost Centers","reference_display":"Cost Centers","type":"array.object","base_type":"array.object","attributes":{"sourceId":"d536319b-aafc-4a12-a37a-a279ee0d31fa","child_name":"cc_output_child0","uiUniqueId":"01548617-e84b-4507-ae86-88bca97547dc","uiTypeLabel":"Array.Object","co_type_name":"FD8e089e8735092814f5bc0e185695ac00","child_label":"cc_output_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"c1f3eaa7-6a78-47fa-ae1b-6406d9c1a15e","uiType":"array.object","child_type":"object","child_uiUniqueId":"a314baee-e4ac-45a7-9785-5bf84bbc5829"}},{"name":"Updated_1.current.sys_id","label":"Trigger➛Department Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmn_department","column_name":"sys_id"},{"name":"dab08af9-2cc7-45aa-a1b1-9c19b8238169.cost_centers","label":"2➛Cost Center Records","reference":"cmn_cost_center","reference_display":"Cost Center","type":"records","base_type":"records","attributes":{"uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"records","uiUniqueId":"a2a82af3-33cb-4bd9-b600-f1892eb0c67d"}},{"name":"2347323d-bc0f-4afa-99ac-48c8a9e48d3f.cost_centers","label":"2➛Cost Center Records","reference":"cmn_cost_center","reference_display":"Cost Center","type":"records","base_type":"records","attributes":{"uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"records","uiUniqueId":"a2a82af3-33cb-4bd9-b600-f1892eb0c67d"}},{"name":"ae196fb6-243f-4709-90e6-9ba8d1264138.cost_centers","label":"2➛Cost Centers","reference_display":"Cost Centers","type":"object","base_type":"object","attributes":{"sourceId":"d536319b-aafc-4a12-a37a-a279ee0d31fa","uiTypeLabel":"Object","co_type_name":"FDb8d3960f18c52814e3eee81af2feef4b","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"c1f3eaa7-6a78-47fa-ae1b-6406d9c1a15e","uiType":"object","uiUniqueId":"01548617-e84b-4507-ae86-88bca97547dc"}},{"name":"273947ea-63fb-421d-8dc2-de5de21e3869.cc_names","label":"1➛CC names","reference_display":"CC names","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"dea407e2-b834-4620-8c4c-742dabbc09e6"}},{"name":"ba0b1976-0c12-49cd-923a-d4d91ffc4012.cost_centers","label":"1➛cost_centers","reference_display":"cost_centers","type":"array.string","base_type":"array.string","attributes":{"uiTypeLabel":"Array.String","co_type_name":"FDc9006e4ba5492814b91ebbe7dd5fd709","child_label":"cost_centers_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"cost_centers_child0","child_uiUniqueId":"0dfada6c-0de5-49fb-9c90-8161a143fa64","uiUniqueId":"85446052-7098-4b05-bd29-f8e627da2479"}},{"name":"bff51856-b4ba-4921-a2f0-2d9f6b8e8c2d.item","label":"3➛cost_centers","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"bff51856-b4ba-4921-a2f0-2d9f6b8e8c2d.item.name","label":"3➛Cost Center Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_cost_center","column_name":"name"},{"name":"9521a769-8ea9-4715-9183-fd0d8d1c4743.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9521a769-8ea9-4715-9183-fd0d8d1c4743.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Copy of Af_Attestera_DeptHead_Changes</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d48bf99fe0c5a8144a4080555269a661</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Copy of Af_Attestera_DeptHead_Changes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_hub_flow_d48bf99fe0c5a8144a4080555269a661</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:23</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=d48bf99fe0c5a8144a4080555269a661"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=d48bf99fe0c5a8144a4080555269a661^sys_idNOT IN208bf99fe0c5a8144a4080555269a6cf,3c8b3d9fe0c5a8144a4080555269a647,458b3d9fe0c5a8144a4080555269a69b,4d8b3d9fe0c5a8144a4080555269a67f,7c8b3d9fe0c5a8144a4080555269a619,b88b3d9fe0c5a8144a4080555269a60f,f88bf99fe0c5a8144a4080555269a6f8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1b8d6ec7b14924944a40438edee3036f</block>
+        <comment>Använder for each för att nå tidigare och ny dep head</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>208bf99fe0c5a8144a4080555269a6cf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>827b66d2-7755-4854-9a09-77867dbae705</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=208bf99fe0c5a8144a4080555269a6cf"/>
+    <sys_element_mapping action="delete_multiple" query="id=208bf99fe0c5a8144a4080555269a6cf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>208bf99fe0c5a8144a4080555269a6cf</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_id>b48bf99fe0c5a8144a4080555269a6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{Updated_1.changed_fields}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Hitta alla kst som ligger under org</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>4</order>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3c8b3d9fe0c5a8144a4080555269a647</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>80e50940-4875-4fba-8cbe-0516dbbef403</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3c8b3d9fe0c5a8144a4080555269a647"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3c8b3d9fe0c5a8144a4080555269a647</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>3c8b3d9fe0c5a8144a4080555269a649</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <value>cmn_cost_center</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3c8b3d9fe0c5a8144a4080555269a647"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>3c8b3d9fe0c5a8144a4080555269a647</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>f48b3d9fe0c5a8144a4080555269a649</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>parent={{Updated_1.current}}^ORparent.parent={{Updated_1.current}}^ORparent.parent.parent={{Updated_1.current}}^ORparent.parent.parent.parent={{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>3c8b3d9fe0c5a8144a4080555269a647</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>b88b3d9fe0c5a8144a4080555269a649</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
+        <comment>Sätt alla attestliggare till Utgången och uppdatera med Retire GenErr</comment>
+        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>7</order>
+        <parent_ui_id>d4825b91-e804-47fe-b3bf-edb5b19aff01</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>458b3d9fe0c5a8144a4080555269a69b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>e74a975a-a8e6-4260-8031-f4de425906d2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=458b3d9fe0c5a8144a4080555269a69b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>458b3d9fe0c5a8144a4080555269a69b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>898b3d9fe0c5a8144a4080555269a69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <value>x_arams_af_atteste_attestation_register</value>
+        <variable display_value="">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=458b3d9fe0c5a8144a4080555269a69b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>458b3d9fe0c5a8144a4080555269a69b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>818b3d9fe0c5a8144a4080555269a69d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>u_cost_center={{d4825b91-e804-47fe-b3bf-edb5b19aff01.item}}^u_stateINrequested,coming,active^u_user={{1db9de8a-583f-4c2d-a528-08c7a4a46037.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>458b3d9fe0c5a8144a4080555269a69b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>098b3d9fe0c5a8144a4080555269a69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>u_state=retired^retire_errand={{5d5e7b0e-b9b6-4b2d-9a13-2ece1212ac82.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>458b3d9fe0c5a8144a4080555269a69b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>458b3d9fe0c5a8144a4080555269a69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment>Skapa GenErr för borttag av attesträtter för tidigare chef</comment>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>5</order>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d8b3d9fe0c5a8144a4080555269a67f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>5d5e7b0e-b9b6-4b2d-9a13-2ece1212ac82</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4d8b3d9fe0c5a8144a4080555269a67f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4d8b3d9fe0c5a8144a4080555269a67f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>c58b3d9fe0c5a8144a4080555269a681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <value>x_arams_af_gen_err_af_generic_errands_table</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4d8b3d9fe0c5a8144a4080555269a67f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4d8b3d9fe0c5a8144a4080555269a67f</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>818b3d9fe0c5a8144a4080555269a681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4d8b3d9fe0c5a8144a4080555269a67f</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>458b3d9fe0c5a8144a4080555269a681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>state=3^u_flow_state=3_1^category={"display":"Borttag av chef för organisation","value":"6e1b6243b14924944a40438edee30352"}^x_arams_af_gen_err_errand_classification=attest^errand_type={"display":"Attestera Beställning","value":"6c84497bf15c2c104a4010d84c4ab529"}^contact_person={{1db9de8a-583f-4c2d-a528-08c7a4a46037.Record.manager}}^u_object={{1db9de8a-583f-4c2d-a528-08c7a4a46037.Record}}^description=Ta bort attesträtter för tidigare chef {{1db9de8a-583f-4c2d-a528-08c7a4a46037.Record.name}} på  {{Updated_1.current.name}}. Se relaterad lista. ^short_description=Ny chef på organisation {{Updated_1.current.name}}.</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Get current dept head</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>3</order>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7c8b3d9fe0c5a8144a4080555269a619</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>2745b2bd-32be-4844-b85d-edff7ea88b44</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7c8b3d9fe0c5a8144a4080555269a619"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7c8b3d9fe0c5a8144a4080555269a619</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>bc8b3d9fe0c5a8144a4080555269a640</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7c8b3d9fe0c5a8144a4080555269a619"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>7c8b3d9fe0c5a8144a4080555269a619</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>788b3d9fe0c5a8144a4080555269a640</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{827b66d2-7755-4854-9a09-77867dbae705.item.current_value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>7c8b3d9fe0c5a8144a4080555269a619</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>3c8b3d9fe0c5a8144a4080555269a640</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Get previous dept head</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>2</order>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b88b3d9fe0c5a8144a4080555269a60f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>1db9de8a-583f-4c2d-a528-08c7a4a46037</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b88b3d9fe0c5a8144a4080555269a60f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b88b3d9fe0c5a8144a4080555269a60f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>788b3d9fe0c5a8144a4080555269a612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b88b3d9fe0c5a8144a4080555269a60f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>b88b3d9fe0c5a8144a4080555269a60f</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>348b3d9fe0c5a8144a4080555269a612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{827b66d2-7755-4854-9a09-77867dbae705.item.previous_value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b88b3d9fe0c5a8144a4080555269a60f</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>f48b3d9fe0c5a8144a4080555269a612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ef8d6ec7b14924944a40438edee30399</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f88bf99fe0c5a8144a4080555269a6f8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>d4825b91-e804-47fe-b3bf-edb5b19aff01</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f88bf99fe0c5a8144a4080555269a6f8"/>
+    <sys_element_mapping action="delete_multiple" query="id=f88bf99fe0c5a8144a4080555269a6f8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>f88bf99fe0c5a8144a4080555269a6f8</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_id>7c8bf99fe0c5a8144a4080555269a6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{80e50940-4875-4fba-8cbe-0516dbbef403.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d48bf99fe0c5a8144a4080555269a661^sys_idNOT IN0d8b3d9fe0c5a8144a4080555269a6a2"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0d8b3d9fe0c5a8144a4080555269a6a2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0d8b3d9fe0c5a8144a4080555269a6a2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0d8b3d9fe0c5a8144a4080555269a6a2</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>0d8b3d9fe0c5a8144a4080555269a6bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <value>every</value>
+        <variable display_value="">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0d8b3d9fe0c5a8144a4080555269a6a2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>458b3d9fe0c5a8144a4080555269a6bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <value>cmn_department</value>
+        <variable display_value="">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0d8b3d9fe0c5a8144a4080555269a6a2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>818b3d9fe0c5a8144a4080555269a6bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <value>foreground</value>
+        <variable display_value="">4ecd76460f103300b599bca2ff767e0d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0d8b3d9fe0c5a8144a4080555269a6a2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>cd8b3d9fe0c5a8144a4080555269a6bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <value>dept_headVALCHANGES</value>
+        <variable display_value="">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d48bf99fe0c5a8144a4080555269a661^sys_idNOT IN988bf99fe0c5a8144a4080555269a664"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d48bf99fe0c5a8144a4080555269a661</id>
+        <name>Copy of Af_Attestera_DeptHead_Changes</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>988bf99fe0c5a8144a4080555269a664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:24</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=d48bf99fe0c5a8144a4080555269a661^sys_idNOT IN2c8bf99fe0c5a8144a4080555269a6c5,d08bf99fe0c5a8144a4080555269a67a,e88bf99fe0c5a8144a4080555269a681"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDc7bb8e972389a814b56f9737abfe8b92,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</model>
+        <model_id>d48bf99fe0c5a8144a4080555269a661</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d48bf99fe0c5a8144a4080555269a661</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2c8bf99fe0c5a8144a4080555269a6c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</model>
+        <model_id>d48bf99fe0c5a8144a4080555269a661</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d48bf99fe0c5a8144a4080555269a661</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d08bf99fe0c5a8144a4080555269a67a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</model>
+        <model_id>d48bf99fe0c5a8144a4080555269a661</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d48bf99fe0c5a8144a4080555269a661</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e88bf99fe0c5a8144a4080555269a681</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d48bf99fe0c5a8144a4080555269a661^sys_idNOT IN3c8b3d9fe0c5a8144a4080555269a647,458b3d9fe0c5a8144a4080555269a69b,4d8b3d9fe0c5a8144a4080555269a67f,7c8b3d9fe0c5a8144a4080555269a619,b88b3d9fe0c5a8144a4080555269a60f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Hitta alla kst som ligger under org</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>4</order>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3c8b3d9fe0c5a8144a4080555269a647</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>80e50940-4875-4fba-8cbe-0516dbbef403</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3c8b3d9fe0c5a8144a4080555269a647"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3c8b3d9fe0c5a8144a4080555269a647</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>3c8b3d9fe0c5a8144a4080555269a649</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <value>cmn_cost_center</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3c8b3d9fe0c5a8144a4080555269a647"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>3c8b3d9fe0c5a8144a4080555269a647</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>f48b3d9fe0c5a8144a4080555269a649</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>parent={{Updated_1.current}}^ORparent.parent={{Updated_1.current}}^ORparent.parent.parent={{Updated_1.current}}^ORparent.parent.parent.parent={{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>3c8b3d9fe0c5a8144a4080555269a647</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>b88b3d9fe0c5a8144a4080555269a649</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Multiple Records">9daf2a72c75100105312134c95c26073</action_type>
+        <action_type_parent display_value="Update Multiple Records">c40e2632c75100105312134c95c260f6</action_type_parent>
+        <comment>Sätt alla attestliggare till Utgången och uppdatera med Retire GenErr</comment>
+        <compiled_snapshot>9daf2a72c75100105312134c95c26073</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>7</order>
+        <parent_ui_id>d4825b91-e804-47fe-b3bf-edb5b19aff01</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>458b3d9fe0c5a8144a4080555269a69b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>e74a975a-a8e6-4260-8031-f4de425906d2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=458b3d9fe0c5a8144a4080555269a69b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>458b3d9fe0c5a8144a4080555269a69b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>898b3d9fe0c5a8144a4080555269a69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <value>x_arams_af_atteste_attestation_register</value>
+        <variable display_value="">5daf2a72c75100105312134c95c26074</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=458b3d9fe0c5a8144a4080555269a69b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>458b3d9fe0c5a8144a4080555269a69b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>818b3d9fe0c5a8144a4080555269a69d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>u_cost_center={{d4825b91-e804-47fe-b3bf-edb5b19aff01.item}}^u_stateINrequested,coming,active^u_user={{1db9de8a-583f-4c2d-a528-08c7a4a46037.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>458b3d9fe0c5a8144a4080555269a69b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>098b3d9fe0c5a8144a4080555269a69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value>u_state=retired^retire_errand={{5d5e7b0e-b9b6-4b2d-9a13-2ece1212ac82.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>458b3d9fe0c5a8144a4080555269a69b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:28</sys_created_on>
+        <sys_id>458b3d9fe0c5a8144a4080555269a69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9daf2a72c75100105312134c95c26073</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment>Skapa GenErr för borttag av attesträtter för tidigare chef</comment>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>5</order>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d8b3d9fe0c5a8144a4080555269a67f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>5d5e7b0e-b9b6-4b2d-9a13-2ece1212ac82</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4d8b3d9fe0c5a8144a4080555269a67f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4d8b3d9fe0c5a8144a4080555269a67f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>c58b3d9fe0c5a8144a4080555269a681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <value>x_arams_af_gen_err_af_generic_errands_table</value>
+        <variable display_value="">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4d8b3d9fe0c5a8144a4080555269a67f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4d8b3d9fe0c5a8144a4080555269a67f</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>818b3d9fe0c5a8144a4080555269a681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4d8b3d9fe0c5a8144a4080555269a67f</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>458b3d9fe0c5a8144a4080555269a681</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>state=3^u_flow_state=3_1^category={"display":"Borttag av chef för organisation","value":"6e1b6243b14924944a40438edee30352"}^x_arams_af_gen_err_errand_classification=attest^errand_type={"display":"Attestera Beställning","value":"6c84497bf15c2c104a4010d84c4ab529"}^contact_person={{1db9de8a-583f-4c2d-a528-08c7a4a46037.Record.manager}}^u_object={{1db9de8a-583f-4c2d-a528-08c7a4a46037.Record}}^description=Ta bort attesträtter för tidigare chef {{1db9de8a-583f-4c2d-a528-08c7a4a46037.Record.name}} på  {{Updated_1.current.name}}. Se relaterad lista. ^short_description=Ny chef på organisation {{Updated_1.current.name}}.</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Get current dept head</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>3</order>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7c8b3d9fe0c5a8144a4080555269a619</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>2745b2bd-32be-4844-b85d-edff7ea88b44</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7c8b3d9fe0c5a8144a4080555269a619"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7c8b3d9fe0c5a8144a4080555269a619</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>bc8b3d9fe0c5a8144a4080555269a640</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7c8b3d9fe0c5a8144a4080555269a619"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>7c8b3d9fe0c5a8144a4080555269a619</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>788b3d9fe0c5a8144a4080555269a640</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{827b66d2-7755-4854-9a09-77867dbae705.item.current_value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>7c8b3d9fe0c5a8144a4080555269a619</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>3c8b3d9fe0c5a8144a4080555269a640</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Get previous dept head</comment>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <order>2</order>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b88b3d9fe0c5a8144a4080555269a60f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>1db9de8a-583f-4c2d-a528-08c7a4a46037</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b88b3d9fe0c5a8144a4080555269a60f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b88b3d9fe0c5a8144a4080555269a60f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>788b3d9fe0c5a8144a4080555269a612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b88b3d9fe0c5a8144a4080555269a60f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>b88b3d9fe0c5a8144a4080555269a60f</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>348b3d9fe0c5a8144a4080555269a612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{827b66d2-7755-4854-9a09-77867dbae705.item.previous_value}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b88b3d9fe0c5a8144a4080555269a60f</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:27</sys_created_on>
+        <sys_id>f48b3d9fe0c5a8144a4080555269a612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d48bf99fe0c5a8144a4080555269a661^sys_idNOT IN208bf99fe0c5a8144a4080555269a6cf,f88bf99fe0c5a8144a4080555269a6f8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1b8d6ec7b14924944a40438edee3036f</block>
+        <comment>Använder for each för att nå tidigare och ny dep head</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>208bf99fe0c5a8144a4080555269a6cf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>827b66d2-7755-4854-9a09-77867dbae705</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=208bf99fe0c5a8144a4080555269a6cf"/>
+    <sys_element_mapping action="delete_multiple" query="id=208bf99fe0c5a8144a4080555269a6cf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>208bf99fe0c5a8144a4080555269a6cf</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_id>b48bf99fe0c5a8144a4080555269a6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{Updated_1.changed_fields}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">ef8d6ec7b14924944a40438edee30399</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Copy of Af_Attestera_DeptHead_Changes">d48bf99fe0c5a8144a4080555269a661</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>827b66d2-7755-4854-9a09-77867dbae705</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f88bf99fe0c5a8144a4080555269a6f8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 08:54:21</sys_updated_on>
+        <ui_id>d4825b91-e804-47fe-b3bf-edb5b19aff01</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f88bf99fe0c5a8144a4080555269a6f8"/>
+    <sys_element_mapping action="delete_multiple" query="id=f88bf99fe0c5a8144a4080555269a6f8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>f88bf99fe0c5a8144a4080555269a6f8</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_id>7c8bf99fe0c5a8144a4080555269a6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{80e50940-4875-4fba-8cbe-0516dbbef403.Records}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d48bf99fe0c5a8144a4080555269a661^sys_idNOT IN648bf99fe0c5a8144a4080555269a6c4,a88bf99fe0c5a8144a4080555269a6ca,e08bf99fe0c5a8144a4080555269a680"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d48bf99fe0c5a8144a4080555269a661</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>648bf99fe0c5a8144a4080555269a6c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d48bf99fe0c5a8144a4080555269a661</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a88bf99fe0c5a8144a4080555269a6ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d48bf99fe0c5a8144a4080555269a661</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-18 07:43:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e08bf99fe0c5a8144a4080555269a680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-18 07:43:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

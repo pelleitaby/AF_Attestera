@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Order of Special Attestation Right">8128d986b18928544a40438edee30379</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2021-01-08 10:19:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>89886e0eb129e0d84a40438edee303ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Order of Special Attestation Right.Ekonomiavdelningen</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_89886e0eb129e0d84a40438edee303ce</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2021-01-08 10:19:02</sys_updated_on>
+        <user_criteria display_value="Ekonomiavdelningen">3338e24eb129e0d84a40438edee303ab</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</application>
+        <file_path/>
+        <instance_id>0a3a4f9edb0a6f409df22f17d49619af</instance_id>
+        <instance_name>serviceportal-dev</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_89886e0eb129e0d84a40438edee303ce</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Order of Special Attestation Right">8128d986b18928544a40438edee30379</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>velan</sys_created_by><sys_created_on>2021-01-08 10:19:02</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>89886e0eb129e0d84a40438edee303ce</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Order of Special Attestation Right.Ekonomiavdelningen</sys_name><sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_89886e0eb129e0d84a40438edee303ce</sys_update_name><sys_updated_by>velan</sys_updated_by><sys_updated_on>2021-01-08 10:19:02</sys_updated_on><user_criteria display_value="Ekonomiavdelningen">3338e24eb129e0d84a40438edee303ab</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>-1586261775</payload_hash>
+        <record_name>Order of Special Attestation Right.Ekonomiavdelningen</record_name>
+        <reverted_from/>
+        <source>b7212122e070e0904a4080555269a6e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2021-01-08 10:19:03</sys_created_on>
+        <sys_id>01886e0eb129e0d84a40438edee303d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176e181b6380000001</sys_recorded_at>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2021-01-08 10:19:03</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>09886e0e1d29e0d88b132d8457c6b4d1</update_guid>
+        <update_guid_history>09886e0e1d29e0d88b132d8457c6b4d1:-1586261775</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2021-01-08 13:37:23">df288742b1ede0d84a40438edee30346</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2021-01-08 12:37:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>21226710a41249ec8c4e2a0f106db290</sys_id>
+        <sys_metadata>89886e0eb129e0d84a40438edee303ce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Order of Special Attestation Right.Ekonomiavdelningen</sys_name>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_parent display_value="Order of Special Attestation Right">8128d986b18928544a40438edee30379</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_scope_delete display_value="">80565de7d5d4443d8eef1d0e01c79cb9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_89886e0eb129e0d84a40438edee303ce</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_89886e0eb129e0d84a40438edee303ce">01886e0eb129e0d84a40438edee303d2</sys_update_version>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2021-01-08 12:37:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

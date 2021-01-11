@@ -1,114 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="1e4ebfc1719824144a40604d772bb57f" sys_domain="global" table="x_arams_af_atteste_attestation_register" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_user</element>
+            <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:43</sys_created_on>
-            <sys_id>8fbf3309719824144a40604d772bb563</sys_id>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>2c727c76b10920944a40438edee30315</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">cd286185f1ece8904a4010d84c4ab585</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>e8727c76b10920944a40438edee30316</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 10:47:43</sys_updated_on>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>2</position>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>60727c76b10920944a40438edee30317</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_user</element>
+            <position>3</position>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>e4727c76b10920944a40438edee30317</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manager</element>
+            <position>4</position>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>6c727c76b10920944a40438edee30317</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_cost_center</element>
-            <position>1</position>
+            <position>5</position>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:43</sys_created_on>
-            <sys_id>07bf3309719824144a40604d772bb564</sys_id>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>e0727c76b10920944a40438edee30318</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 10:47:43</sys_updated_on>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_max_amount</element>
-            <position>2</position>
+            <element>u_system</element>
+            <position>6</position>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:43</sys_created_on>
-            <sys_id>8bbf3309719824144a40604d772bb564</sys_id>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>68727c76b10920944a40438edee30318</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 10:47:43</sys_updated_on>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>source</element>
+            <position>7</position>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>ec727c76b10920944a40438edee30318</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>8</position>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:43</sys_created_on>
-            <sys_id>03bf3309719824144a40604d772bb565</sys_id>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>74727c76b10920944a40438edee30319</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 10:47:43</sys_updated_on>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_state</element>
-            <position>4</position>
+            <position>9</position>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:43</sys_created_on>
-            <sys_id>87bf3309719824144a40604d772bb565</sys_id>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>f8727c76b10920944a40438edee30319</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 10:47:43</sys_updated_on>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_valid_from</element>
-            <position>5</position>
+            <position>10</position>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:43</sys_created_on>
-            <sys_id>0fbf3309719824144a40604d772bb565</sys_id>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>70727c76b10920944a40438edee3031a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 10:47:43</sys_updated_on>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_valid_to</element>
-            <position>6</position>
+            <position>11</position>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:43</sys_created_on>
-            <sys_id>83bf3309719824144a40604d772bb566</sys_id>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>f4727c76b10920944a40438edee3031a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 10:47:43</sys_updated_on>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_active</element>
-            <position>7</position>
+            <element>u_attest_err</element>
+            <position>12</position>
             <sys_created_by>velan</sys_created_by>
-            <sys_created_on>2020-11-04 10:47:43</sys_created_on>
-            <sys_id>0bbf3309719824144a40604d772bb566</sys_id>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>7c727c76b10920944a40438edee3031a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
             <sys_updated_by>velan</sys_updated_by>
-            <sys_updated_on>2020-11-04 10:47:43</sys_updated_on>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>retire_errand</element>
+            <position>13</position>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>f0727c76b10920944a40438edee3031b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>special_attestation_rights</element>
+            <position>14</position>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>78727c76b10920944a40438edee3031b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>diarie_number</element>
+            <position>15</position>
+            <sys_created_by>velan</sys_created_by>
+            <sys_created_on>2020-12-16 13:07:15</sys_created_on>
+            <sys_id>fc727c76b10920944a40438edee3031b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_arams_af_atteste_attestation_register" sys_domain="global" view="Default view">1e4ebfc1719824144a40604d772bb57f</sys_ui_section>
+            <sys_updated_by>velan</sys_updated_by>
+            <sys_updated_on>2020-12-16 13:07:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

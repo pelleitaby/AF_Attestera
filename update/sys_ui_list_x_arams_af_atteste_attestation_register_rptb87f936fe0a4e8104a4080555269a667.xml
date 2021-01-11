@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_arams_af_atteste_attestation_register" version="2" view="RPTb87f936fe0a4e8104a4080555269a667">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_arams_af_atteste_attestation_register" element="NULL" name="x_arams_af_atteste_attestation_register" parent="NULL" relationship="NULL" sys_domain="global" view="457f53afe0a4e8104a4080555269a6b6">097f53afe0a4e8104a4080555269a6b7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>repan</sys_created_by>
+            <sys_created_on>2020-11-24 13:07:11</sys_created_on>
+            <sys_id>c97f53afe0a4e8104a4080555269a6b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>repan</sys_updated_by>
+            <sys_updated_on>2020-11-24 13:07:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_cost_center</element>
+            <list_id display_value="x_arams_af_atteste_attestation_register" element="NULL" name="x_arams_af_atteste_attestation_register" parent="NULL" relationship="NULL" sys_domain="global" view="457f53afe0a4e8104a4080555269a6b6">097f53afe0a4e8104a4080555269a6b7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>repan</sys_created_by>
+            <sys_created_on>2020-11-24 13:07:11</sys_created_on>
+            <sys_id>c17f53afe0a4e8104a4080555269a6b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>repan</sys_updated_by>
+            <sys_updated_on>2020-11-24 13:07:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>manager</element>
+            <list_id display_value="x_arams_af_atteste_attestation_register" element="NULL" name="x_arams_af_atteste_attestation_register" parent="NULL" relationship="NULL" sys_domain="global" view="457f53afe0a4e8104a4080555269a6b6">097f53afe0a4e8104a4080555269a6b7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>repan</sys_created_by>
+            <sys_created_on>2020-11-24 13:07:11</sys_created_on>
+            <sys_id>c57f53afe0a4e8104a4080555269a6b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>repan</sys_updated_by>
+            <sys_updated_on>2020-11-24 13:07:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_user</element>
+            <list_id display_value="x_arams_af_atteste_attestation_register" element="NULL" name="x_arams_af_atteste_attestation_register" parent="NULL" relationship="NULL" sys_domain="global" view="457f53afe0a4e8104a4080555269a6b6">097f53afe0a4e8104a4080555269a6b7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>repan</sys_created_by>
+            <sys_created_on>2020-11-24 13:07:11</sys_created_on>
+            <sys_id>c97f53afe0a4e8104a4080555269a6b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>repan</sys_updated_by>
+            <sys_updated_on>2020-11-24 13:07:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_valid_from</element>
+            <list_id display_value="x_arams_af_atteste_attestation_register" element="NULL" name="x_arams_af_atteste_attestation_register" parent="NULL" relationship="NULL" sys_domain="global" view="457f53afe0a4e8104a4080555269a6b6">097f53afe0a4e8104a4080555269a6b7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>repan</sys_created_by>
+            <sys_created_on>2020-11-24 13:07:11</sys_created_on>
+            <sys_id>cd7f53afe0a4e8104a4080555269a6b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>repan</sys_updated_by>
+            <sys_updated_on>2020-11-24 13:07:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_valid_to</element>
+            <list_id display_value="x_arams_af_atteste_attestation_register" element="NULL" name="x_arams_af_atteste_attestation_register" parent="NULL" relationship="NULL" sys_domain="global" view="457f53afe0a4e8104a4080555269a6b6">097f53afe0a4e8104a4080555269a6b7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>repan</sys_created_by>
+            <sys_created_on>2020-11-24 13:07:11</sys_created_on>
+            <sys_id>c17f53afe0a4e8104a4080555269a6ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>repan</sys_updated_by>
+            <sys_updated_on>2020-11-24 13:07:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_state</element>
+            <list_id display_value="x_arams_af_atteste_attestation_register" element="NULL" name="x_arams_af_atteste_attestation_register" parent="NULL" relationship="NULL" sys_domain="global" view="457f53afe0a4e8104a4080555269a6b6">097f53afe0a4e8104a4080555269a6b7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>repan</sys_created_by>
+            <sys_created_on>2020-11-24 13:07:11</sys_created_on>
+            <sys_id>c57f53afe0a4e8104a4080555269a6ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>repan</sys_updated_by>
+            <sys_updated_on>2020-11-24 13:07:11</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_arams_af_atteste_attestation_register</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>repan</sys_created_by>
+            <sys_created_on>2020-11-24 13:07:11</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>097f53afe0a4e8104a4080555269a6b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_arams_af_atteste_attestation_register</sys_name>
+            <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+            <sys_update_name>sys_ui_list_x_arams_af_atteste_attestation_register_RPTb87f936fe0a4e8104a4080555269a667</sys_update_name>
+            <sys_updated_by>repan</sys_updated_by>
+            <sys_updated_on>2020-11-24 13:07:11</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptb87f936fe0a4e8104a4080555269a667" name="RPTb87f936fe0a4e8104a4080555269a667">457f53afe0a4e8104a4080555269a6b6</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDd887d64733092814a09b4bb6b14f243e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>ad0596bc71dc20144a40604d772bb5e9</scope_name>
+        <serialized_content>{"FlowDesigner:FDd887d64733092814a09b4bb6b14f243e":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDd887d64733092814a09b4bb6b14f243e.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"cc_output\",\"mandatory\":\"true\",\"child_name\":\"cc_output_child0\",\"uiUniqueId\":\"c1f3eaa7-6a78-47fa-ae1b-6406d9c1a15e\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDd887d64733092814a09b4bb6b14f243e\",\"child_label\":\"cc_output_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"179c0c5c-e85a-47af-ac13-943401db0b4c\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-17 15:07:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>9c87d647e00928144a4080555269a63e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDd887d64733092814a09b4bb6b14f243e</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_complex_object_9c87d647e00928144a4080555269a63e</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-17 15:07:15</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

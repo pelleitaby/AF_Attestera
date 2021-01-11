@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_arams_af_atteste_attestation_register</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_arams_af_atteste_attestation_register">u_stateVALCHANGES^EQ<item display_value="-- None --" endquery="false" field="u_state" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Af Atterstera - Update Visited States on state change</name>
+        <order>2000</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function onBefore(current, previous) {
+	//This function will be automatically called when this rule is processed.
+	var states = current.getValue('visited_states')  || '';
+	var state_list = states.split(",");
+	var new_orderd_states = [];
+	var processflow_state_order = processflowStateOrder();
+	
+	//Ordering the visited states based on current state
+	for(i = 0 ; i < state_list.length; i++ ){
+		if(processflow_state_order[state_list[i]] < processflow_state_order[current.state]){
+			new_orderd_states.push(state_list[i]);
+		} else {
+			break;
+		}
+	}
+	new_orderd_states.push(current.state);
+	current.visited_states = new_orderd_states.toString();
+}
+
+function processflowStateOrder(){
+	var processflow_state_order = {};
+		var gr = new GlideRecord('sys_process_flow');
+		var table = current.sys_class_name;
+		gr.addEncodedQuery('table='+table+'^active=true');
+		gr.orderBy('order');
+		gr.query();
+		while(gr.next()){
+			processflow_state_order[gr.name.toString()] = gr.order.toString();
+		}
+		return processflow_state_order;
+	}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-11-16 11:03:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>a526f141f1642c904a4010d84c4ab502</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Af Atterstera - Update Visited States on state change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_script_a526f141f1642c904a4010d84c4ab502</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-17 10:44:00</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>

@@ -1,0 +1,1650 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>get_cost_centers_under_department</internal_name>
+        <label_cache>[{"name":"{{action.department}}","label":"action➛department","type":"action","ref":""},{"name":"{{action.departments}}","label":"action➛departments","type":"action","ref":""},{"name":"{{step[250e92e5-80bc-41e7-9b7a-a75564f331c5].records}}","label":"step➛Look Up Records step➛Department records","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers}}","label":"step➛Script step➛cost_centers_output","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers.cost_centers}}","label":"step➛Script step➛cost_centers_output➛cost_centers","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers.sys_id}}","label":"step➛Script step➛cost_centers_output➛sys_id","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].department}}","label":"step➛Script step➛department","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].departments}}","label":"step➛Script step➛departments","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1]._}}","label":"step➛Script step➛","type":"step","ref":""},{"name":"{{step[5daa77e2-899a-405c-bc59-1e3e5baa220c].records}}","label":"step➛Look Up Records step➛Department records","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers_output}}","label":"step➛Script step➛cost_centers_output","type":"step","ref":"cmn_cost_center"}]</label_cache>
+        <latest_snapshot>d73b3060e08da0d04a4080555269a68b</latest_snapshot>
+        <master_snapshot>7fc34c60e085a0d04a4080555269a60b</master_snapshot>
+        <name>Get Cost Center Names under Departments</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 08:55:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>04b5bf90e005a0d04a4080555269a69c</sys_id>
+        <sys_mod_count>85</sys_mod_count>
+        <sys_name>Get Cost Center Names under Departments</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_04b5bf90e005a0d04a4080555269a69c</sys_update_name>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-17 14:54:02</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=04b5bf90e005a0d04a4080555269a69c"/>
+    <sys_element_mapping action="delete_multiple" query="id=04b5bf90e005a0d04a4080555269a69c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cost_centers</field>
+        <id>04b5bf90e005a0d04a4080555269a69c</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:05:04</sys_created_on>
+        <sys_id>50dea4ace0c9a0d04a4080555269a6c6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:35:36</sys_updated_on>
+        <table>var__m_sys_hub_action_output_04b5bf90e005a0d04a4080555269a69c</table>
+        <value>{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers_output}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=04b5bf90e005a0d04a4080555269a69c^sys_idNOT IN16d63754e005a0d04a4080555269a60b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Cost Center Names under Departments">04b5bf90e005a0d04a4080555269a69c</action>
+        <cid>189746ab-5e50-4c44-a21f-3d88967f75f1</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:00:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>16d63754e005a0d04a4080555269a60b</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:59:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=16d63754e005a0d04a4080555269a60b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>16d63754e005a0d04a4080555269a60b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:00:33</sys_created_on>
+        <sys_id>2ad63754e005a0d04a4080555269a65a</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:59:16</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+var SI = new x_arams_af_atteste.AF_AttesteraUtils();
+var result =  SI.getCostCentersName(inputs.Expired);
+
+  outputs.cost_centers_output = result;
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>16d63754e005a0d04a4080555269a60b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:56:13</sys_created_on>
+        <sys_id>ca930460e085a0d04a4080555269a6cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:56:13</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=16d63754e005a0d04a4080555269a60b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>16d63754e005a0d04a4080555269a60b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:56:13</sys_created_on>
+        <sys_id>c2930460e085a0d04a4080555269a6cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:56:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Expired</field>
+        <id>16d63754e005a0d04a4080555269a60b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:00:33</sys_created_on>
+        <sys_id>26d63754e005a0d04a4080555269a65b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:11</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_16d63754e005a0d04a4080555269a60b</table>
+        <value>{{action.departments}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>16d63754e005a0d04a4080555269a60b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:00:33</sys_created_on>
+        <sys_id>a6d63754e005a0d04a4080555269a65a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:00:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=16d63754e005a0d04a4080555269a60b^sys_idNOT INbc4fc8e8e0c5a0d04a4080555269a60e"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>Expired</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">16d63754e005a0d04a4080555269a60b</model>
+        <model_id>16d63754e005a0d04a4080555269a60b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_16d63754e005a0d04a4080555269a60b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmn_department">cmn_department</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 10:47:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bc4fc8e8e0c5a0d04a4080555269a60e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=16d63754e005a0d04a4080555269a60b^sys_idNOT INcf85f020e04da0d04a4080555269a661"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=cost_centers_child0,child_name=cost_centers_child0,child_type=string,child_type_label=String,child_uiUniqueId=61546bf5-419a-4b6c-8a09-232f0e9239e2,co_type_name=FD894d04e46dc5a0d0334e295604d90660,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=01180d0a-a308-467e-86f1-a1faa861b98b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cost_centers_output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>cost_centers_output</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">16d63754e005a0d04a4080555269a60b</model>
+        <model_id>16d63754e005a0d04a4080555269a60b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_16d63754e005a0d04a4080555269a60b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:34:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cf85f020e04da0d04a4080555269a661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:34:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=04b5bf90e005a0d04a4080555269a69c^sys_idNOT INf2fc2468e0c9a0d04a4080555269a645"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=9c214ecb-9f8d-4c3a-8c04-8c45eb066868</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmn_department</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>departments</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>departments</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Get Cost Center Names under Departments">04b5bf90e005a0d04a4080555269a69c</model>
+        <model_id>04b5bf90e005a0d04a4080555269a69c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_04b5bf90e005a0d04a4080555269a69c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmn_department">cmn_department</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 12:57:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f2fc2468e0c9a0d04a4080555269a645</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=04b5bf90e005a0d04a4080555269a69c^sys_idNOT IN90dea4ace0c9a0d04a4080555269a6ac"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=a2a82af3-33cb-4bd9-b600-f1892eb0c67d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmn_cost_center</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cost_centers</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>cost_centers</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Get Cost Center Names under Departments">04b5bf90e005a0d04a4080555269a69c</model>
+        <model_id>04b5bf90e005a0d04a4080555269a69c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_04b5bf90e005a0d04a4080555269a69c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmn_cost_center">cmn_cost_center</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:05:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>90dea4ace0c9a0d04a4080555269a6ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:05:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=04b5bf90e005a0d04a4080555269a69c^sys_idNOT IN16d63754e005a0d04a4080555269a60b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Cost Center Names under Departments">04b5bf90e005a0d04a4080555269a69c</action>
+        <cid>189746ab-5e50-4c44-a21f-3d88967f75f1</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:00:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>16d63754e005a0d04a4080555269a60b</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:59:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=16d63754e005a0d04a4080555269a60b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>16d63754e005a0d04a4080555269a60b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:00:33</sys_created_on>
+        <sys_id>2ad63754e005a0d04a4080555269a65a</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:59:16</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+var SI = new x_arams_af_atteste.AF_AttesteraUtils();
+var result =  SI.getCostCentersName(inputs.Expired);
+
+  outputs.cost_centers_output = result;
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>16d63754e005a0d04a4080555269a60b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:56:13</sys_created_on>
+        <sys_id>ca930460e085a0d04a4080555269a6cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:56:13</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=16d63754e005a0d04a4080555269a60b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>16d63754e005a0d04a4080555269a60b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:56:13</sys_created_on>
+        <sys_id>c2930460e085a0d04a4080555269a6cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:56:13</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Expired</field>
+        <id>16d63754e005a0d04a4080555269a60b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:00:33</sys_created_on>
+        <sys_id>26d63754e005a0d04a4080555269a65b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:11</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_16d63754e005a0d04a4080555269a60b</table>
+        <value>{{action.departments}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>16d63754e005a0d04a4080555269a60b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:00:33</sys_created_on>
+        <sys_id>a6d63754e005a0d04a4080555269a65a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:00:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=16d63754e005a0d04a4080555269a60b^sys_idNOT INbc4fc8e8e0c5a0d04a4080555269a60e"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>Expired</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">16d63754e005a0d04a4080555269a60b</model>
+        <model_id>16d63754e005a0d04a4080555269a60b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_16d63754e005a0d04a4080555269a60b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmn_department">cmn_department</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 10:47:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bc4fc8e8e0c5a0d04a4080555269a60e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=16d63754e005a0d04a4080555269a60b^sys_idNOT INcf85f020e04da0d04a4080555269a661"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=cost_centers_child0,child_name=cost_centers_child0,child_type=string,child_type_label=String,child_uiUniqueId=61546bf5-419a-4b6c-8a09-232f0e9239e2,co_type_name=FD894d04e46dc5a0d0334e295604d90660,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=01180d0a-a308-467e-86f1-a1faa861b98b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cost_centers_output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>cost_centers_output</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">16d63754e005a0d04a4080555269a60b</model>
+        <model_id>16d63754e005a0d04a4080555269a60b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_16d63754e005a0d04a4080555269a60b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:34:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cf85f020e04da0d04a4080555269a661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:34:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_04b5bf90e005a0d04a4080555269a69c^sys_idNOT IN8bfc2468e0c9a0d04a4080555269a668"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>departments</element>
+        <help/>
+        <hint/>
+        <label>departments</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_04b5bf90e005a0d04a4080555269a69c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 12:57:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8bfc2468e0c9a0d04a4080555269a668</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_04b5bf90e005a0d04a4080555269a69c^sys_idNOT IN50dea4ace0c9a0d04a4080555269a6c3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>cost_centers</element>
+        <help/>
+        <hint/>
+        <label>cost_centers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_04b5bf90e005a0d04a4080555269a69c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:05:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>50dea4ace0c9a0d04a4080555269a6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:05:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=04b5bf90e005a0d04a4080555269a69c^sys_idNOT IN5cd38c60e085a0d04a4080555269a610"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Cost Center Names under Departments">04b5bf90e005a0d04a4080555269a69c</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"5cd38c60e085a0d04a4080555269a610","name":"plan"}}</plan>
+        <snapshot>d73b3060e08da0d04a4080555269a68b</snapshot>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5cd38c60e085a0d04a4080555269a610</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:59:24</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_cost_centers_under_expired_department</internal_name>
+        <label_cache>[{"name":"{{action.department}}","label":"action➛department","type":"action","ref":""},{"name":"{{action.departments}}","label":"action➛departments","type":"action","ref":""},{"name":"{{step[250e92e5-80bc-41e7-9b7a-a75564f331c5].records}}","label":"step➛Look Up Records step➛Department records","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers}}","label":"step➛Script step➛cost_centers_output","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers.cost_centers}}","label":"step➛Script step➛cost_centers_output➛cost_centers","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers.sys_id}}","label":"step➛Script step➛cost_centers_output➛sys_id","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].department}}","label":"step➛Script step➛department","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].departments}}","label":"step➛Script step➛departments","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1]._}}","label":"step➛Script step➛","type":"step","ref":""},{"name":"{{step[5daa77e2-899a-405c-bc59-1e3e5baa220c].records}}","label":"step➛Look Up Records step➛Department records","type":"step","ref":""},{"name":"{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers_output}}","label":"step➛Script step➛cost_centers_output","type":"step","ref":"cmn_cost_center"}]</label_cache>
+        <master>true</master>
+        <name>Get Cost Centers under Department</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Cost Center Names under Departments">04b5bf90e005a0d04a4080555269a69c</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>7fc34c60e085a0d04a4080555269a60b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:08:50</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=7fc34c60e085a0d04a4080555269a60b"/>
+    <sys_element_mapping action="delete_multiple" query="id=7fc34c60e085a0d04a4080555269a60b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cost_centers</field>
+        <id>7fc34c60e085a0d04a4080555269a60b</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:06:30</sys_created_on>
+        <sys_id>152fa4ece0c9a0d04a4080555269a643</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:06:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7fc34c60e085a0d04a4080555269a60b</table>
+        <value>{{step[189746ab-5e50-4c44-a21f-3d88967f75f1].cost_centers_output}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=7fc34c60e085a0d04a4080555269a60b^sys_idNOT INffc34c60e085a0d04a4080555269a613"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Cost Centers under Department">7fc34c60e085a0d04a4080555269a60b</action>
+        <cid>189746ab-5e50-4c44-a21f-3d88967f75f1</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ffc34c60e085a0d04a4080555269a613</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:59:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ffc34c60e085a0d04a4080555269a613"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ffc34c60e085a0d04a4080555269a613</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>00d34c60e085a0d04a4080555269a68e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:59:22</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+var SI = new x_arams_af_atteste.AF_AttesteraUtils();
+var result =  SI.getCostCentersName(inputs.Expired);
+
+  outputs.cost_centers_output = result;
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ffc34c60e085a0d04a4080555269a613</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>4cd34c60e085a0d04a4080555269a68d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:57:11</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ffc34c60e085a0d04a4080555269a613"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ffc34c60e085a0d04a4080555269a613</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>08d34c60e085a0d04a4080555269a68d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:57:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Expired</field>
+        <id>ffc34c60e085a0d04a4080555269a613</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>88d34c60e085a0d04a4080555269a68e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:32</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ffc34c60e085a0d04a4080555269a613</table>
+        <value>{{action.departments}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>ffc34c60e085a0d04a4080555269a613</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>c8d34c60e085a0d04a4080555269a68d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:57:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ffc34c60e085a0d04a4080555269a613^sys_idNOT INba4f4ce8e0c5a0d04a4080555269a653"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>Expired</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>Expired</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">ffc34c60e085a0d04a4080555269a613</model>
+        <model_id>ffc34c60e085a0d04a4080555269a613</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_ffc34c60e085a0d04a4080555269a613</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmn_department">cmn_department</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 10:47:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ba4f4ce8e0c5a0d04a4080555269a653</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ffc34c60e085a0d04a4080555269a613^sys_idNOT INc8973c24e04da0d04a4080555269a670"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=cost_centers_child0,child_name=cost_centers_child0,child_type=string,child_type_label=String,child_uiUniqueId=61546bf5-419a-4b6c-8a09-232f0e9239e2,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=01180d0a-a308-467e-86f1-a1faa861b98b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cost_centers_output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>cost_centers_output</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">ffc34c60e085a0d04a4080555269a613</model>
+        <model_id>ffc34c60e085a0d04a4080555269a613</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ffc34c60e085a0d04a4080555269a613</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:43:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c8973c24e04da0d04a4080555269a670</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:43:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=7fc34c60e085a0d04a4080555269a60b^sys_idNOT INb11de868e0c9a0d04a4080555269a688"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=9c214ecb-9f8d-4c3a-8c04-8c45eb066868</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmn_department</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>departments</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>departments</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Get Cost Centers under Department">7fc34c60e085a0d04a4080555269a60b</model>
+        <model_id>7fc34c60e085a0d04a4080555269a60b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_7fc34c60e085a0d04a4080555269a60b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmn_department">cmn_department</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 12:57:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b11de868e0c9a0d04a4080555269a688</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=7fc34c60e085a0d04a4080555269a60b^sys_idNOT IN452f64ece0c9a0d04a4080555269a6f9"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=a2a82af3-33cb-4bd9-b600-f1892eb0c67d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmn_cost_center</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cost_centers</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>cost_centers</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Get Cost Centers under Department">7fc34c60e085a0d04a4080555269a60b</model>
+        <model_id>7fc34c60e085a0d04a4080555269a60b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_7fc34c60e085a0d04a4080555269a60b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmn_cost_center">cmn_cost_center</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:06:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>452f64ece0c9a0d04a4080555269a6f9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:06:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=7fc34c60e085a0d04a4080555269a60b^sys_idNOT INffc34c60e085a0d04a4080555269a613"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Cost Centers under Department">7fc34c60e085a0d04a4080555269a60b</action>
+        <cid>189746ab-5e50-4c44-a21f-3d88967f75f1</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ffc34c60e085a0d04a4080555269a613</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:59:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ffc34c60e085a0d04a4080555269a613"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ffc34c60e085a0d04a4080555269a613</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>00d34c60e085a0d04a4080555269a68e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:59:22</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+var SI = new x_arams_af_atteste.AF_AttesteraUtils();
+var result =  SI.getCostCentersName(inputs.Expired);
+
+  outputs.cost_centers_output = result;
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ffc34c60e085a0d04a4080555269a613</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>4cd34c60e085a0d04a4080555269a68d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:57:11</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ffc34c60e085a0d04a4080555269a613"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ffc34c60e085a0d04a4080555269a613</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>08d34c60e085a0d04a4080555269a68d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:57:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Expired</field>
+        <id>ffc34c60e085a0d04a4080555269a613</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>88d34c60e085a0d04a4080555269a68e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:32</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ffc34c60e085a0d04a4080555269a613</table>
+        <value>{{action.departments}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>ffc34c60e085a0d04a4080555269a613</id>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 09:57:11</sys_created_on>
+        <sys_id>c8d34c60e085a0d04a4080555269a68d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 09:57:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ffc34c60e085a0d04a4080555269a613^sys_idNOT INba4f4ce8e0c5a0d04a4080555269a653"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>Expired</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>Expired</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">ffc34c60e085a0d04a4080555269a613</model>
+        <model_id>ffc34c60e085a0d04a4080555269a613</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_ffc34c60e085a0d04a4080555269a613</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmn_department">cmn_department</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 10:47:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ba4f4ce8e0c5a0d04a4080555269a653</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ffc34c60e085a0d04a4080555269a613^sys_idNOT INc8973c24e04da0d04a4080555269a670"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=cost_centers_child0,child_name=cost_centers_child0,child_type=string,child_type_label=String,child_uiUniqueId=61546bf5-419a-4b6c-8a09-232f0e9239e2,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=01180d0a-a308-467e-86f1-a1faa861b98b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cost_centers_output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>cost_centers_output</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">ffc34c60e085a0d04a4080555269a613</model>
+        <model_id>ffc34c60e085a0d04a4080555269a613</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ffc34c60e085a0d04a4080555269a613</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:43:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c8973c24e04da0d04a4080555269a670</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:43:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_7fc34c60e085a0d04a4080555269a60b^sys_idNOT INf51de868e0c9a0d04a4080555269a6b6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>departments</element>
+        <help/>
+        <hint/>
+        <label>departments</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_7fc34c60e085a0d04a4080555269a60b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 12:57:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f51de868e0c9a0d04a4080555269a6b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 12:57:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_7fc34c60e085a0d04a4080555269a60b^sys_idNOT IN152fa4ece0c9a0d04a4080555269a602"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>cost_centers</element>
+        <help/>
+        <hint/>
+        <label>cost_centers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7fc34c60e085a0d04a4080555269a60b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>velan</sys_created_by>
+        <sys_created_on>2020-12-09 13:06:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>152fa4ece0c9a0d04a4080555269a602</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>velan</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:06:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Attestation register" max_length="40" name="x_arams_af_atteste_attestation_register" type="collection">
-        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+    <element label="Attestation register" max_length="40" name="x_arams_af_atteste_attestation_register" sizeclass="1288" type="collection">
+        <element attributes="edge_encryption_enabled=true,ref_contributions=x_arams_af_gen_err_task_show_diary" label="Diarie number" max_length="40" name="diarie_number" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Retire errand" max_length="32" name="retire_errand" read_only="true" reference="x_arams_af_gen_err_af_generic_errands_table" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Source" max_length="1024" name="source" read_only="true" reference="x_arams_af_atteste_source" type="glide_list"/>
+        <element label="Special Attestation Rights" max_length="32" name="special_attestation_rights" read_only="true" reference="x_arams_af_atteste_special_attestation_rights" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Active" max_length="40" name="u_active" read_only="true" type="boolean"/>
         <element attributes="encode_utf8=false" label="Cost center" max_length="32" name="u_cost_center" reference="cmn_cost_center" type="reference"/>
-        <element attributes="omit_sys_original=true" default="0" label="Max amount" max_length="20" name="u_max_amount" type="currency"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_state" type="string">
+        <element active="false" attributes="omit_sys_original=true" default="0" label="Max amount" max_length="20" name="u_max_amount" read_only="true" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_state" read_only="true" type="string">
             <choice>
-                <element inactive_on_update="false" label="Coming" sequence="0" value="coming"/>
+                <element inactive_on_update="false" label="Begärd" language="sv" sequence="0" value="requested"/>
                 <element inactive="true" inactive_on_update="true" label="New" sequence="0" value="new"/>
-                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
                 <element inactive="true" inactive_on_update="true" label="Approved" sequence="1" value="approved"/>
-                <element inactive_on_update="false" label="Passed" sequence="2" value="passed"/>
-                <element inactive="true" inactive_on_update="true" label="Rejected" sequence="2" value="rejected"/>
+                <element inactive_on_update="false" label="Coming" sequence="1" value="coming"/>
+                <element inactive="true" inactive_on_update="true" label="Godkänd" language="sv" sequence="1" value="approved"/>
+                <element inactive_on_update="false" label="Kommande" sequence="1" value="coming"/>
+                <element inactive_on_update="false" label="Active" sequence="2" value="active"/>
+                <element inactive_on_update="false" label="Aktiv" language="sv" sequence="2" value="active"/>
+                <element inactive_on_update="false" label="Retired" sequence="3" value="retired"/>
+                <element inactive_on_update="false" label="Utgången" language="sv" sequence="3" value="retired"/>
+                <element inactive_on_update="false" label="Avslagen" language="sv" sequence="4" value="rejected"/>
+                <element inactive_on_update="false" label="Återkallad" language="sv" sequence="5" value="recalled"/>
+                <element inactive_on_update="false" label="Recalled" sequence="5" value="recalled"/>
             </choice>
         </element>
-        <element attributes="encode_utf8=false" label="User" max_length="32" name="u_user" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Receiver of attestation" max_length="32" name="u_user" read_only="true" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Valid from" max_length="40" name="u_valid_from" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Valid to" max_length="40" name="u_valid_to" type="glide_date"/>
         <index name="index">
+            <element name="retire_errand"/>
+        </index>
+        <index name="index3">
+            <element name="special_attestation_rights"/>
+        </index>
+        <index name="index">
             <element name="u_cost_center"/>
         </index>
-        <index name="index2">
+        <index name="index6">
             <element name="u_user"/>
+        </index>
+        <index name="index7">
+            <element name="sys_class_name"/>
         </index>
     </element>
 </database>

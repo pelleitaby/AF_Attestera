@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="AF Generic Errands">3b9cd455a10bc45c4a4091156e275724</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Special Attestation Rights</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_arams_af_atteste_special_attestation_rights</name>
+        <order>1900</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_arams_af_atteste.special_attestation_rights_user,x_arams_af_atteste.user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>repan</sys_created_by>
+        <sys_created_on>2020-12-11 09:47:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>ffd4da85e08de4d04a4080555269a69f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Special Attestation Rights</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
+        <sys_update_name>sys_app_module_ffd4da85e08de4d04a4080555269a69f</sys_update_name>
+        <sys_updated_by>repan</sys_updated_by>
+        <sys_updated_on>2020-12-11 10:21:14</sys_updated_on>
+        <timeline_page/>
+        <title>Special Attestation Rights</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

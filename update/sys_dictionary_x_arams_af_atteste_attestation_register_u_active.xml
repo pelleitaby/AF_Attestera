@@ -33,7 +33,7 @@
         <name>x_arams_af_atteste_attestation_register</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -49,8 +49,8 @@
         <sys_created_by>velan</sys_created_by>
         <sys_created_on>2020-11-04 10:47:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>9eaf3fc5719824144a40604d772bb5bb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_id>6b18b85bf194a0104a4010d84c4ab563</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Active</sys_name>
         <sys_package display_value="AF Attestera" source="x_arams_af_atteste">ad0596bc71dc20144a40604d772bb5e9</sys_package>
         <sys_policy/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="AF Attestera">ad0596bc71dc20144a40604d772bb5e9</sys_scope>
         <sys_update_name>sys_dictionary_x_arams_af_atteste_attestation_register_u_active</sys_update_name>
         <sys_updated_by>velan</sys_updated_by>
-        <sys_updated_on>2020-11-04 10:47:23</sys_updated_on>
+        <sys_updated_on>2021-01-04 09:06:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
